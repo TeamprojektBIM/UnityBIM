@@ -6,8 +6,10 @@ using GoogleARCore;
 public class SceneController : MonoBehaviour
 {
     public Camera firstPersonCamera;
+    public bool playGame = false;
     public ScoreboardController scoreboard;
     public SnakeController snakeController;
+    private DetectedPlane selectedPlane;
 
     void Start()
     {
@@ -41,10 +43,17 @@ public class SceneController : MonoBehaviour
 
         ProcessTouches();
 
-        scoreboard.SetScore(snakeController.GetLength());
+        if (playGame) { 
+            scoreboard.SetScore(snakeController.GetLength());
+        }
     }
 
-    void ProcessTouches()
+    public DetectedPlane GetPlane()
+    {
+        return selectedPlane;
+    }
+
+    public void ProcessTouches()
     {
         Touch touch;
         if (Input.touchCount != 1 ||
@@ -61,14 +70,18 @@ public class SceneController : MonoBehaviour
         if (Frame.Raycast(touch.position.x, touch.position.y, raycastFilter, out hit))
         {
             SetSelectedPlane(hit.Trackable as DetectedPlane);
+            selectedPlane = hit.Trackable as DetectedPlane;
         }
     }
 
-    void SetSelectedPlane(DetectedPlane selectedPlane)
+    public void SetSelectedPlane(DetectedPlane selectedPlane)
     {
         Debug.Log("Selected plane centered at " + selectedPlane.CenterPose.position);
-        scoreboard.SetSelectedPlane(selectedPlane);
-        snakeController.SetPlane(selectedPlane);
-        GetComponent<FoodController>().SetSelectedPlane(selectedPlane);
+        if (playGame)
+        {
+            scoreboard.SetSelectedPlane(selectedPlane);
+            snakeController.SetPlane(selectedPlane);
+            GetComponent<FoodController>().SetSelectedPlane(selectedPlane);
+        }
     }
 }
