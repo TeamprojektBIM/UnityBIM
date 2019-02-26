@@ -3,11 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using GoogleARCore;
 
-public class SceneController : MonoBehaviour
+public class GameController : MonoBehaviour
 {
+    public Camera firstPersonCamera;
+    public bool playGame = false;
+    public ScoreboardController scoreboard;
+    public SnakeController snakeController;
+    private DetectedPlane selectedPlane;
 
-    //<----- Error Updates ----->//
     void Start()
+    {
+        QuitOnConnectionErrors();
+    }
+
+    void QuitOnConnectionErrors()
     {
         if (Session.Status == SessionStatus.ErrorPermissionNotGranted)
         {
@@ -21,9 +30,7 @@ public class SceneController : MonoBehaviour
         }
     }
 
-    //<-----     ----->//
-
-    public void Update()
+    void Update()
     {
         // The session status must be Tracking in order to access the Frame.
         if (Session.Status != SessionStatus.Tracking)
@@ -34,11 +41,19 @@ public class SceneController : MonoBehaviour
         }
         Screen.sleepTimeout = SleepTimeout.NeverSleep;
 
-        processTouch();
+        ProcessTouches();
+
+        if (playGame) { 
+            scoreboard.SetScore(snakeController.GetLength());
+        }
     }
 
-    //If User touches screen, set the detected Plane in DataContainer
-    private void processTouch()
+    public DetectedPlane GetPlane()
+    {
+        return selectedPlane;
+    }
+
+    public void ProcessTouches()
     {
         Touch touch;
         if (Input.touchCount != 1 ||
@@ -52,10 +67,21 @@ public class SceneController : MonoBehaviour
             TrackableHitFlags.PlaneWithinBounds |
             TrackableHitFlags.PlaneWithinPolygon;
 
-        if (Frame.Raycast(Screen.width/2, Screen.height/2, raycastFilter, out hit))
+        if (Frame.Raycast(touch.position.x, touch.position.y, raycastFilter, out hit))
         {
-            GetComponent<DataContainer>().setDetectedPlane(hit.Trackable as DetectedPlane);
+            SetSelectedPlane(hit.Trackable as DetectedPlane);
+            selectedPlane = hit.Trackable as DetectedPlane;
         }
     }
 
+    public void SetSelectedPlane(DetectedPlane selectedPlane)
+    {
+        Debug.Log("Selected plane centered at " + selectedPlane.CenterPose.position);
+        if (playGame)
+        {
+            scoreboard.SetSelectedPlane(selectedPlane);
+            snakeController.SetPlane(selectedPlane);
+            GetComponent<FoodController>().SetSelectedPlane(selectedPlane);
+        }
+    }
 }

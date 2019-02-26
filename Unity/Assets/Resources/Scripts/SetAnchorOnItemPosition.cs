@@ -7,7 +7,7 @@ public class SetAnchorOnItemPosition : MonoBehaviour
 {
     private DetectedPlane detectedPlane;
     private Anchor anchor;
-    public SceneController controller;
+    public GameController controller;
     public Camera firstPersonCamera;
     public GameObject prefab;
     private GameObject spawnInstance;
