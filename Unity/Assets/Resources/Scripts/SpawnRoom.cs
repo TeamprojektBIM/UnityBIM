@@ -10,17 +10,9 @@ public class SpawnRoom : MonoBehaviour
 
     private bool ready = false;
 
-    public void spawnARoom()
+    public void spawnARoom( Transform spawnPoint)
     {
-        ready = true;
-    }
-
-    void Update()
-    {
-        if (!ready)
-        {
-            return;
-        }
+        cont = GetComponent<DataContainer>();
 
         // The tracking state must be FrameTrackingState.Tracking
         // in order to access the Frame.
@@ -29,37 +21,11 @@ public class SpawnRoom : MonoBehaviour
             return;
         }
 
-        // If there is no plane, then return
-        if (cont.GetDetectedPlane() == null)
-        {
-            return;
-        }
-
-        // Check for the plane being subsumed.
-        // If the plane has been subsumed switch attachment to the subsuming plane.
-        /*
-        while (cont.GetDetectedPlane().SubsumedBy != null)
-        {
-            DetectedPlane plane = cont.GetDetectedPlane();
-            cont.setDetectedPlane(plane.SubsumedBy);
-        }*/
-
-
-        if (cont.getSpawnedRoom() != null)
-        {
-            // Move the position to stay consistent with the plane.
-            cont.getSpawnedRoom().transform.position = new Vector3(transform.position.x,
-                        cont.GetDetectedPlane().CenterPose.position.y + yOffset, transform.position.z);
-            createAnchor();
-        }
+        createAnchor(spawnPoint);
     }
 
-    private void createAnchor()
+    private void createAnchor( Transform spawnPoint)
     {
-        // Create the position of the anchor by raycasting a point towards the screen.
-        Vector2 pos = new Vector2(Screen.width / 2, Screen.height / 2);
-        Ray ray = cont.firstPersonCamera.ScreenPointToRay(pos);
-        Vector3 anchorPosition = ray.GetPoint(5f);
 
         // Create the anchor at that point.
         if (cont.GetAnchor() != null)
@@ -67,8 +33,9 @@ public class SpawnRoom : MonoBehaviour
             DestroyObject(cont.GetAnchor());
         }
         cont.setAnchor(cont.GetDetectedPlane().CreateAnchor(
-            new Pose(anchorPosition, Quaternion.identity)));
+            new Pose(spawnPoint.position, Quaternion.identity)));
 
+        Debug.Log("peace");
         // Record the y offset from the plane.
         yOffset = transform.position.y - cont.GetDetectedPlane().CenterPose.position.y;
 
@@ -84,7 +51,7 @@ public class SpawnRoom : MonoBehaviour
                 Quaternion.identity, transform);
         cont.setSpawnedRoom(room);
 
-        cont.getSpawnedRoom().transform.position = anchorPosition;
+        cont.getSpawnedRoom().transform.position = spawnPoint.position;
         cont.getSpawnedRoom().transform.SetParent(cont.GetAnchor().transform);
     }
 }

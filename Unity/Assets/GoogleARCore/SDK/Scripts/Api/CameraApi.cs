@@ -49,6 +49,14 @@ namespace GoogleARCoreInternal
             return apiTrackingState.ToTrackingState();
         }
 
+        public LostTrackingReason GetLostTrackingReason(IntPtr cameraHandle)
+        {
+            ApiTrackingFailureReason apiTrackingFailureReason = ApiTrackingFailureReason.None;
+            ExternApi.ArCamera_getTrackingFailureReason(m_NativeSession.SessionHandle,
+                cameraHandle, ref apiTrackingFailureReason);
+            return apiTrackingFailureReason.ToLostTrackingReason();
+        }
+
         public Pose GetPose(IntPtr cameraHandle)
         {
             if (cameraHandle == IntPtr.Zero)
@@ -91,7 +99,8 @@ namespace GoogleARCoreInternal
             IntPtr cameraIntrinsicsHandle = IntPtr.Zero;
             ExternApi.ArCameraIntrinsics_create(m_NativeSession.SessionHandle, ref cameraIntrinsicsHandle);
 
-            ExternApi.ArCamera_getImageIntrinsics(m_NativeSession.SessionHandle, cameraHandle, cameraIntrinsicsHandle);
+            ExternApi.ArCamera_getImageIntrinsics(m_NativeSession.SessionHandle, cameraHandle,
+                                                  cameraIntrinsicsHandle);
 
             CameraIntrinsics textureIntrinsics = _GetCameraIntrinsicsFromHandle(cameraIntrinsicsHandle);
             ExternApi.ArCameraIntrinsics_destroy(cameraIntrinsicsHandle);
@@ -127,6 +136,10 @@ namespace GoogleARCoreInternal
             [AndroidImport(ApiConstants.ARCoreNativeApi)]
             public static extern void ArCamera_getTrackingState(IntPtr sessionHandle, IntPtr cameraHandle,
                 ref ApiTrackingState outTrackingState);
+
+            [AndroidImport(ApiConstants.ARCoreNativeApi)]
+            public static extern void ArCamera_getTrackingFailureReason(IntPtr sessionHandle, IntPtr cameraHandle,
+                ref ApiTrackingFailureReason outTrackingState);
 
             [AndroidImport(ApiConstants.ARCoreNativeApi)]
             public static extern void ArCamera_getDisplayOrientedPose(

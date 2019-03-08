@@ -37,6 +37,7 @@ namespace GoogleARCoreInternal
         public ApiCloudAnchorMode CloudAnchorMode;
         public IntPtr ArPrestoAugmentedImageDatabase;
         public ApiCameraFocusMode CameraFocusMode;
+        public ApiAugmentedFaceMode FaceMode;
 
         /// <summary>
         /// Wrap an ARCoreSessionConfig in an API config.
@@ -87,6 +88,19 @@ namespace GoogleARCoreInternal
                     break;
                 default:
                     CameraFocusMode = ApiCameraFocusMode.Fixed;
+                    break;
+            }
+
+            switch (config.AugmentedFaceMode)
+            {
+                case AugmentedFaceMode.Disabled:
+                    FaceMode = ApiAugmentedFaceMode.Disabled;
+                    break;
+                case AugmentedFaceMode.Mesh:
+                    FaceMode = ApiAugmentedFaceMode.Mesh3D;
+                    break;
+                default:
+                    FaceMode = ApiAugmentedFaceMode.Disabled;
                     break;
             }
         }

@@ -44,6 +44,12 @@ namespace GoogleARCoreInternal
 
         public IntPtr CreateArPrestoAugmentedImageDatabase(byte[] rawData)
         {
+            if (Application.isEditor)
+            {
+                // ArPrestoAugmentedImageDatabase_create() not supported in editor.
+                return IntPtr.Zero;
+            }
+
             IntPtr outDatabaseHandle = IntPtr.Zero;
             GCHandle handle = new GCHandle();
             IntPtr rawDataHandle = IntPtr.Zero;
@@ -106,7 +112,7 @@ namespace GoogleARCoreInternal
                 {
                     for (int j = 0; j < image.width; j++)
                     {
-                        grayscaleBytes[(i * image.width) + j] = 
+                        grayscaleBytes[(i * image.width) + j] =
                             (byte)(((0.213 * pixels[((image.height - 1 - i) * image.width) + j].r)
                             + (0.715 * pixels[((image.height - 1 - i) * image.width) + j].g)
                             + (0.072 * pixels[((image.height - 1 - i) * image.width) + j].b)) * 255);

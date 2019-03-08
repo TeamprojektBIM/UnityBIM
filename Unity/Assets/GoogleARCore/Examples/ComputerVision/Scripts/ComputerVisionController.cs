@@ -54,6 +54,11 @@ namespace GoogleARCore.Examples.ComputerVision
         public Text CameraIntrinsicsOutput;
 
         /// <summary>
+        /// A Text box that is used to show messages at runtime.
+        /// </summary>
+        public Text SnackbarText;
+
+        /// <summary>
         /// A toggle that is used to select the low resolution CPU camera configuration.
         /// </summary>
         public Toggle LowResConfigToggle;
@@ -64,9 +69,14 @@ namespace GoogleARCore.Examples.ComputerVision
         public Toggle HighResConfigToggle;
 
         /// <summary>
-        /// A PointClickHandler to detect touch on the entire screen.
+        /// A toggle that is used to toggle between CPU image and GPU texture.
         /// </summary>
-        public PointClickHandler ScreenTouchHandler;
+        public PointClickHandler ImageTextureToggle;
+
+        /// <summary>
+        /// A toggle that is used to toggle between Fixed and Auto focus modes.
+        /// </summary>
+        public Toggle AutoFocusToggle;
 
         /// <summary>
         /// A buffer that stores the result of performing edge detection on the camera image each frame.
@@ -90,6 +100,7 @@ namespace GoogleARCore.Examples.ComputerVision
         private bool m_UseHighResCPUTexture = false;
         private ARCoreSession.OnChooseCameraConfigurationDelegate m_OnChoseCameraConfiguration = null;
         private bool m_Resolutioninitialized = false;
+        private Text m_ImageTextureToggleText;
 
         /// <summary>
         /// The Unity Start() method.
@@ -98,7 +109,18 @@ namespace GoogleARCore.Examples.ComputerVision
         {
             Screen.sleepTimeout = SleepTimeout.NeverSleep;
 
-            ScreenTouchHandler.OnPointClickDetected += _OnBackgroundClicked;
+            ImageTextureToggle.OnPointClickDetected += _OnBackgroundClicked;
+
+            m_ImageTextureToggleText = ImageTextureToggle.GetComponentInChildren<Text>();
+#if UNITY_EDITOR
+            AutoFocusToggle.GetComponentInChildren<Text>().text += "\n(Not supported in editor)";
+            HighResConfigToggle.GetComponentInChildren<Text>().text += "\n(Not supported in editor)";
+            SnackbarText.text =
+                "Use mouse/keyboard in the editor Game view to toggle settings.\n" +
+                "(Tapping on the device screen will not work while running in the editor)";
+#else
+            SnackbarText.text = string.Empty;
+#endif
 
             // Register the callback to set camera config before arcore session is enabled.
             m_OnChoseCameraConfiguration = _ChooseCameraConfiguration;
@@ -122,6 +144,8 @@ namespace GoogleARCore.Examples.ComputerVision
             // Change the CPU resolution checkbox visibility.
             LowResConfigToggle.gameObject.SetActive(EdgeDetectionBackgroundImage.enabled);
             HighResConfigToggle.gameObject.SetActive(EdgeDetectionBackgroundImage.enabled);
+            m_ImageTextureToggleText.text = EdgeDetectionBackgroundImage.enabled ?
+                    "Switch to GPU Texture" : "Switch to CPU Image";
 
             if (!Session.Status.IsValid())
             {
@@ -140,7 +164,7 @@ namespace GoogleARCore.Examples.ComputerVision
 
             var cameraIntrinsics = EdgeDetectionBackgroundImage.enabled
                 ? Frame.CameraImage.ImageIntrinsics : Frame.CameraImage.TextureIntrinsics;
-            string intrinsicsType = EdgeDetectionBackgroundImage.enabled ? "Image" : "Texture";
+            string intrinsicsType = EdgeDetectionBackgroundImage.enabled ? "CPU Image" : "GPU Texture";
             CameraIntrinsicsOutput.text = _CameraIntrinsicsToString(cameraIntrinsics, intrinsicsType);
         }
 
@@ -213,13 +237,13 @@ namespace GoogleARCore.Examples.ComputerVision
             {
                 m_EdgeDetectionBackgroundTexture = new Texture2D(width, height, TextureFormat.R8, false, false);
                 m_EdgeDetectionResultImage = new byte[width * height];
-                _UpdateCameraImageToDisplayUVs();
+                m_CameraImageToDisplayUvTransformation = Frame.CameraImage.ImageDisplayUvs;
             }
 
             if (m_CachedOrientation != Screen.orientation || m_CachedScreenDimensions.x != Screen.width ||
                 m_CachedScreenDimensions.y != Screen.height)
             {
-                _UpdateCameraImageToDisplayUVs();
+                m_CameraImageToDisplayUvTransformation = Frame.CameraImage.ImageDisplayUvs;
                 m_CachedOrientation = Screen.orientation;
                 m_CachedScreenDimensions = new Vector2(Screen.width, Screen.height);
             }
@@ -245,135 +269,6 @@ namespace GoogleARCore.Examples.ComputerVision
                     m_CameraImageToDisplayUvTransformation.BottomRight.x,
                     m_CameraImageToDisplayUvTransformation.BottomRight.y));
             }
-        }
-
-        /// <summary>
-        /// Updates the uv transformation from the camera image orientation and aspect to the display's.
-        /// </summary>
-        private void _UpdateCameraImageToDisplayUVs()
-        {
-            int cameraToDisplayRotation = _GetCameraImageToDisplayRotation();
-
-            float uBorder;
-            float vBorder;
-            _GetUvBorders(out uBorder, out vBorder);
-
-            switch (cameraToDisplayRotation)
-            {
-            case 90:
-                m_CameraImageToDisplayUvTransformation.TopLeft = new Vector2(1 - uBorder, 1 - vBorder);
-                m_CameraImageToDisplayUvTransformation.TopRight = new Vector2(1 - uBorder, vBorder);
-                m_CameraImageToDisplayUvTransformation.BottomRight = new Vector2(uBorder, vBorder);
-                m_CameraImageToDisplayUvTransformation.BottomLeft = new Vector2(uBorder, 1 - vBorder);
-                break;
-            case 180:
-                m_CameraImageToDisplayUvTransformation.TopLeft = new Vector2(uBorder, 1 - vBorder);
-                m_CameraImageToDisplayUvTransformation.TopRight = new Vector2(1 - uBorder, 1 - vBorder);
-                m_CameraImageToDisplayUvTransformation.BottomRight = new Vector2(1 - uBorder, vBorder);
-                m_CameraImageToDisplayUvTransformation.BottomLeft = new Vector2(uBorder, vBorder);
-                break;
-            case 270:
-                m_CameraImageToDisplayUvTransformation.TopLeft = new Vector2(uBorder, vBorder);
-                m_CameraImageToDisplayUvTransformation.TopRight = new Vector2(uBorder, 1 - vBorder);
-                m_CameraImageToDisplayUvTransformation.BottomRight = new Vector2(1 - uBorder, 1 - vBorder);
-                m_CameraImageToDisplayUvTransformation.BottomLeft = new Vector2(1 - uBorder, vBorder);
-                break;
-            default:
-            case 0:
-                m_CameraImageToDisplayUvTransformation.TopLeft = new Vector2(1 - uBorder, vBorder);
-                m_CameraImageToDisplayUvTransformation.TopRight = new Vector2(uBorder, vBorder);
-                m_CameraImageToDisplayUvTransformation.BottomRight = new Vector2(uBorder, 1 - vBorder);
-                m_CameraImageToDisplayUvTransformation.BottomLeft = new Vector2(1 - uBorder, 1 - vBorder);
-                break;
-            }
-        }
-
-        /// <summary>
-        /// Gets the rotation that needs to be applied to the device camera image in order for it to match
-        /// the current orientation of the display.
-        /// </summary>
-        /// <returns>The needed rotation.</returns>
-        private int _GetCameraImageToDisplayRotation()
-        {
-#if !UNITY_EDITOR
-            AndroidJavaClass cameraClass = new AndroidJavaClass("android.hardware.Camera");
-            AndroidJavaClass cameraInfoClass = new AndroidJavaClass("android.hardware.Camera$CameraInfo");
-            AndroidJavaObject cameraInfo = new AndroidJavaObject("android.hardware.Camera$CameraInfo");
-            cameraClass.CallStatic("getCameraInfo", cameraInfoClass.GetStatic<int>("CAMERA_FACING_BACK"),
-                cameraInfo);
-            int cameraRotationToNaturalDisplayOrientation = cameraInfo.Get<int>("orientation");
-
-            AndroidJavaClass contextClass = new AndroidJavaClass("android.content.Context");
-            AndroidJavaClass unityPlayerClass = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
-            AndroidJavaObject unityActivity = unityPlayerClass.GetStatic<AndroidJavaObject>("currentActivity");
-            AndroidJavaObject windowManager =
-                unityActivity.Call<AndroidJavaObject>("getSystemService",
-                contextClass.GetStatic<string>("WINDOW_SERVICE"));
-
-            AndroidJavaClass surfaceClass = new AndroidJavaClass("android.view.Surface");
-            int displayRotationFromNaturalEnum = windowManager
-                .Call<AndroidJavaObject>("getDefaultDisplay").Call<int>("getRotation");
-
-            int displayRotationFromNatural = 0;
-            if (displayRotationFromNaturalEnum == surfaceClass.GetStatic<int>("ROTATION_90"))
-            {
-                displayRotationFromNatural = 90;
-            }
-            else if (displayRotationFromNaturalEnum == surfaceClass.GetStatic<int>("ROTATION_180"))
-            {
-                displayRotationFromNatural = 180;
-            }
-            else if (displayRotationFromNaturalEnum == surfaceClass.GetStatic<int>("ROTATION_270"))
-            {
-                displayRotationFromNatural = 270;
-            }
-
-            return (cameraRotationToNaturalDisplayOrientation + displayRotationFromNatural) % 360;
-#else  // !UNITY_EDITOR
-            // Using Instant Preview in the Unity Editor, the display orientation is always portrait.
-            return 0;
-#endif  // !UNITY_EDITOR
-        }
-
-        /// <summary>
-        /// Gets the percentage of space needed to be cropped on the device camera image to match the display
-        /// aspect ratio.
-        /// </summary>
-        /// <param name="uBorder">The cropping of the 'u' dimension.</param>
-        /// <param name="vBorder">The cropping of the 'v' dimension.</param>
-        private void _GetUvBorders(out float uBorder, out float vBorder)
-        {
-            int imageWidth = m_EdgeDetectionBackgroundTexture.width;
-            int imageHeight = m_EdgeDetectionBackgroundTexture.height;
-
-            float screenAspectRatio;
-            var cameraToDisplayRotation = _GetCameraImageToDisplayRotation();
-            if (cameraToDisplayRotation == 90 || cameraToDisplayRotation == 270)
-            {
-                screenAspectRatio = (float)Screen.height / Screen.width;
-            }
-            else
-            {
-                screenAspectRatio = (float)Screen.width / Screen.height;
-            }
-
-            var imageAspectRatio = (float)imageWidth / imageHeight;
-            var croppedWidth = 0.0f;
-            var croppedHeight = 0.0f;
-
-            if (screenAspectRatio < imageAspectRatio)
-            {
-                croppedWidth = imageHeight * screenAspectRatio;
-                croppedHeight = imageHeight;
-            }
-            else
-            {
-                croppedWidth = imageWidth;
-                croppedHeight = imageWidth / screenAspectRatio;
-            }
-
-            uBorder = (imageWidth - croppedWidth) / imageWidth / 2.0f;
-            vBorder = (imageHeight - croppedHeight) / imageHeight / 2.0f;
         }
 
         /// <summary>
@@ -441,11 +336,12 @@ namespace GoogleARCore.Examples.ComputerVision
             float fovX = 2.0f * Mathf.Atan2(intrinsics.ImageDimensions.x, 2 * intrinsics.FocalLength.x) * Mathf.Rad2Deg;
             float fovY = 2.0f * Mathf.Atan2(intrinsics.ImageDimensions.y, 2 * intrinsics.FocalLength.y) * Mathf.Rad2Deg;
 
-            return string.Format("Unrotated Camera {4} Intrinsics: {0}  Focal Length: {1}{0}  " +
-                "Principal Point:{2}{0}  Image Dimensions: {3}{0}  Unrotated Field of View: ({5}º, {6}º)",
+            string message = string.Format("Unrotated Camera {4} Intrinsics:{0}  Focal Length: {1}{0}  " +
+                "Principal Point: {2}{0}  Image Dimensions: {3}{0}  Unrotated Field of View: ({5}°, {6}°)",
                 Environment.NewLine, intrinsics.FocalLength.ToString(),
                 intrinsics.PrincipalPoint.ToString(), intrinsics.ImageDimensions.ToString(),
                 intrinsicsType, fovX, fovY);
+            return message;
         }
 
         /// <summary>
@@ -459,10 +355,10 @@ namespace GoogleARCore.Examples.ComputerVision
             {
                 Vector2 ImageSize = supportedConfigurations[0].ImageSize;
                 LowResConfigToggle.GetComponentInChildren<Text>().text = string.Format(
-                    "Low Resolution ({0} x {1})", ImageSize.x, ImageSize.y);
+                    "Low Resolution CPU Image ({0} x {1})", ImageSize.x, ImageSize.y);
                 ImageSize = supportedConfigurations[supportedConfigurations.Count - 1].ImageSize;
                 HighResConfigToggle.GetComponentInChildren<Text>().text = string.Format(
-                    "High Resolution ({0} x {1})", ImageSize.x, ImageSize.y);
+                    "High Resolution CPU Image ({0} x {1})", ImageSize.x, ImageSize.y);
 
                 m_Resolutioninitialized = true;
             }

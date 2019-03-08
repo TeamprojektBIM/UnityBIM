@@ -5,16 +5,14 @@ public class DataContainer : MonoBehaviour
 {
     public Camera firstPersonCamera;
     public GameObject roomPrefab;
-    public GameObject testObject;
 
     private DetectedPlane detectedPlane;
     private Anchor roomAnchor;
     private GameObject spawnedRoom;
 
-    public void setDetectedPlane(DetectedPlane detectedPlane, TrackableHit hit)
+    public void setDetectedPlane(TrackableHit hit)
     {
-        this.detectedPlane = detectedPlane;
-        Instantiate(testObject, hit.Pose.position, Quaternion.identity);
+        this.detectedPlane = hit.Trackable as DetectedPlane;
     }
 
     public DetectedPlane GetDetectedPlane()
