@@ -53,6 +53,7 @@ public class SceneController : MonoBehaviour
         if (Frame.Raycast(Screen.width/2, Screen.height/2, raycastFilter, out hit))
         {
             GetComponent<DataContainer>().setDetectedPlane(hit.Trackable as DetectedPlane);
+            GetComponent<SpawnRoom>().spawnARoom();
         }
     }
 

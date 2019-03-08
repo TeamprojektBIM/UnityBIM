@@ -5,30 +5,23 @@ using GoogleARCore;
 
 public class SpawnRoom : MonoBehaviour
 {
-    public GameObject testObject;
-
     private float yOffset;
     private DataContainer cont;
-    private bool planeSet = false;
 
-    IEnumerator testForChangeOfPlane()
-    {
-        while(cont.GetDetectedPlane().Equals(null)){ }
-        yield return null;
-        planeSet = true;
-    }
+    private bool ready = false;
 
-    // Start is called before the first frame update
-    void Start()
+    public void spawnARoom()
     {
-        cont = GetComponent<DataContainer>();
-        StartCoroutine(testForChangeOfPlane());
-        Instantiate(testObject, new Vector3(),
-                Quaternion.identity, transform);
+        ready = true;
     }
 
     void Update()
     {
+        if (!ready)
+        {
+            return;
+        }
+
         // The tracking state must be FrameTrackingState.Tracking
         // in order to access the Frame.
         if (Session.Status != SessionStatus.Tracking)
@@ -55,10 +48,6 @@ public class SpawnRoom : MonoBehaviour
             // Move the position to stay consistent with the plane.
             cont.getSpawnedRoom().transform.position = new Vector3(transform.position.x,
                         cont.GetDetectedPlane().CenterPose.position.y + yOffset, transform.position.z);
-        }
-
-        if (planeSet)
-        {
             createAnchor();
         }
     }
@@ -66,7 +55,7 @@ public class SpawnRoom : MonoBehaviour
     private void createAnchor()
     {
         // Create the position of the anchor by raycasting a point towards the screen.
-        Vector2 pos = new Vector2(Screen.width/2, Screen.height/2);
+        Vector2 pos = new Vector2(Screen.width / 2, Screen.height / 2);
         Ray ray = cont.firstPersonCamera.ScreenPointToRay(pos);
         Vector3 anchorPosition = ray.GetPoint(5f);
 
@@ -92,10 +81,8 @@ public class SpawnRoom : MonoBehaviour
         GameObject room = Instantiate(cont.roomPrefab, spawnPos,
                 Quaternion.identity, transform);
         cont.setSpawnedRoom(room);
-        
+
         cont.getSpawnedRoom().transform.position = anchorPosition;
         cont.getSpawnedRoom().transform.SetParent(cont.GetAnchor().transform);
     }
-
-
 }

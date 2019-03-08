@@ -140,7 +140,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 922908780}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.301183, y: 6.0975084, z: 9.021748}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -186,6 +186,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firstPersonCamera: {fileID: 1976605433}
   roomPrefab: {fileID: 2851989796746945598, guid: 3783524d25ab0454a9b39f7f858aa9e9,
+    type: 3}
+  testObject: {fileID: 2992921141960616192, guid: 58f54f6ebe72fe142b2c42bd2eaaa5f5,
     type: 3}
 --- !u!114 &922908785
 MonoBehaviour:

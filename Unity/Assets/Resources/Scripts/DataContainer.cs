@@ -5,6 +5,7 @@ public class DataContainer : MonoBehaviour
 {
     public Camera firstPersonCamera;
     public GameObject roomPrefab;
+    public GameObject testObject;
 
     private DetectedPlane detectedPlane;
     private Anchor roomAnchor;
@@ -13,6 +14,7 @@ public class DataContainer : MonoBehaviour
     public void setDetectedPlane(DetectedPlane detectedPlane)
     {
         this.detectedPlane = detectedPlane;
+        Instantiate(testObject);
     }
 
     public DetectedPlane GetDetectedPlane()
