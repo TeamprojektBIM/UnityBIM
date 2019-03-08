@@ -104,5 +104,7 @@ namespace GoogleARCore
                 m_BackgroundRenderer.camera = null;
             }
         }
+
+
     }
 }
