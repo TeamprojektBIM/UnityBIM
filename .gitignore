@@ -79,3 +79,6 @@ sysinfo.txt
 .Trashes
 ehthumbs.db
 Thumbs.db
+manifest.json
+/Unity/Packages/manifest.json
+
