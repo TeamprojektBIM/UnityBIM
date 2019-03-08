@@ -37,11 +37,13 @@ public class SpawnRoom : MonoBehaviour
 
         // Check for the plane being subsumed.
         // If the plane has been subsumed switch attachment to the subsuming plane.
+        /*
         while (cont.GetDetectedPlane().SubsumedBy != null)
         {
             DetectedPlane plane = cont.GetDetectedPlane();
             cont.setDetectedPlane(plane.SubsumedBy);
-        }
+        }*/
+
 
         if (cont.getSpawnedRoom() != null)
         {

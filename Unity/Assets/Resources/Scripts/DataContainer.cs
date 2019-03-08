@@ -11,10 +11,10 @@ public class DataContainer : MonoBehaviour
     private Anchor roomAnchor;
     private GameObject spawnedRoom;
 
-    public void setDetectedPlane(DetectedPlane detectedPlane)
+    public void setDetectedPlane(DetectedPlane detectedPlane, TrackableHit hit)
     {
         this.detectedPlane = detectedPlane;
-        Instantiate(testObject);
+        Instantiate(testObject, hit.Pose.position, Quaternion.identity);
     }
 
     public DetectedPlane GetDetectedPlane()
