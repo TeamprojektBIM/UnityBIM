@@ -121,8 +121,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 922908781}
-  - component: {fileID: 922908782}
   - component: {fileID: 922908783}
+  - component: {fileID: 922908782}
   - component: {fileID: 922908784}
   - component: {fileID: 922908785}
   m_Layer: 0
@@ -199,7 +199,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7889fbf1f07939d45883e84bc2115fc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneManager: {fileID: 0}
 --- !u!1001 &1175427485
 PrefabInstance:
   m_ObjectHideFlags: 0

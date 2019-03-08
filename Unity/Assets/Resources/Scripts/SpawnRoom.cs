@@ -5,6 +5,8 @@ using GoogleARCore;
 
 public class SpawnRoom : MonoBehaviour
 {
+    public GameObject testObject;
+
     private float yOffset;
     private DataContainer cont;
     private bool planeSet = false;
@@ -21,6 +23,8 @@ public class SpawnRoom : MonoBehaviour
     {
         cont = GetComponent<DataContainer>();
         StartCoroutine(testForChangeOfPlane());
+        Instantiate(testObject, new Vector3(),
+                Quaternion.identity, transform);
     }
 
     void Update()
@@ -61,8 +65,7 @@ public class SpawnRoom : MonoBehaviour
 
     private void createAnchor()
     {
-        // Create the position of the anchor by raycasting a point towards
-        // the top of the screen.
+        // Create the position of the anchor by raycasting a point towards the screen.
         Vector2 pos = new Vector2(Screen.width/2, Screen.height/2);
         Ray ray = cont.firstPersonCamera.ScreenPointToRay(pos);
         Vector3 anchorPosition = ray.GetPoint(5f);
@@ -86,8 +89,9 @@ public class SpawnRoom : MonoBehaviour
         Vector3 spawnPos = cont.GetDetectedPlane().CenterPose.position;
 
         // Not anchored, it is rigidbody that is influenced by the physics engine.
-        cont.setSpawnedRoom(Instantiate(cont.roomPrefab, spawnPos,
-                Quaternion.identity, transform));
+        GameObject room = Instantiate(cont.roomPrefab, spawnPos,
+                Quaternion.identity, transform);
+        cont.setSpawnedRoom(room);
         
         cont.getSpawnedRoom().transform.position = anchorPosition;
         cont.getSpawnedRoom().transform.SetParent(cont.GetAnchor().transform);
