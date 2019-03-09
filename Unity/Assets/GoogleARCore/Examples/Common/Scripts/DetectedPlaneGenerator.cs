@@ -35,19 +35,31 @@ namespace GoogleARCore.Examples.Common
         public GameObject DetectedPlanePrefab;
         public GameObject planeDetectionPanel;
 
+
         /// <summary>
         /// A list to hold new planes ARCore began tracking in the current frame. This object is used across
         /// the application to avoid per-frame allocations.
         /// </summary>
         private List<DetectedPlane> m_NewPlanes = new List<DetectedPlane>();
+        private GlobalDataContainer container;
 
         /// <summary>
         /// The Unity Update method.
         /// </summary>
+
+        public void Start()
+        {
+            FindDataContainer();
+        }
         public void Update()
         {
+
+            if (!container.RoomSelected)
+            {
+                return;
+            }
             // Check that motion tracking is tracking.
-            if (Session.Status != SessionStatus.Tracking)
+            else if (Session.Status != SessionStatus.Tracking)
             {
                 return;
             }
@@ -67,6 +79,11 @@ namespace GoogleARCore.Examples.Common
                 GameObject planeObject = Instantiate(DetectedPlanePrefab, Vector3.zero, Quaternion.identity, transform);
                 planeObject.GetComponent<DetectedPlaneVisualizer>().Initialize(m_NewPlanes[i]);
             }
+        }
+        private void FindDataContainer()
+        {
+            GameObject containerObject = GameObject.Find(Constants.GlobalDataContainer);
+            container = containerObject.GetComponent<GlobalDataContainer>();
         }
     }
 }

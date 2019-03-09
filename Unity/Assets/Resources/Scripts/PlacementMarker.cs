@@ -14,15 +14,19 @@ public class PlacementMarker : MonoBehaviour
 
 
     // Camera used for raycasting screen point.
-    public Camera firstPersonCamera;
-    
-    public GameObject markerPrefab;
+    private Camera firstPersonCamera;
+
+    [SerializeField]
+    private GameObject markerPrefab;
 
     private SpawnRoom spanwRoom;
     private GameObject marker;
+    private GlobalDataContainer container;
 
     void Start()
     {
+        FindDataContainer();
+        firstPersonCamera = container.FirstPersonCamera;
         spanwRoom = GetComponent<SpawnRoom>();
 
         if (Session.Status == SessionStatus.ErrorPermissionNotGranted)
@@ -124,5 +128,10 @@ public class PlacementMarker : MonoBehaviour
         marker.transform.LookAt(cameraPlanePostion);
     }
 
+    private void FindDataContainer()
+    {
+        GameObject containerObject = GameObject.Find(Constants.GlobalDataContainer);
+        container = containerObject.GetComponent<GlobalDataContainer>();
+    }
 
 }
