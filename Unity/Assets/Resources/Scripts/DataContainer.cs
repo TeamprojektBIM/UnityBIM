@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using GoogleARCore;
 
 public class DataContainer : MonoBehaviour
@@ -12,9 +10,9 @@ public class DataContainer : MonoBehaviour
     private Anchor roomAnchor;
     private GameObject spawnedRoom;
 
-    public void setDetectedPlane(DetectedPlane detectedPlane)
+    public void setDetectedPlane(TrackableHit hit)
     {
-        this.detectedPlane = detectedPlane;
+        this.detectedPlane = hit.Trackable as DetectedPlane;
     }
 
     public DetectedPlane GetDetectedPlane()

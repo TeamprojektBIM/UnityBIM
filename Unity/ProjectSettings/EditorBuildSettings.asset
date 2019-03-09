@@ -15,6 +15,6 @@ EditorBuildSettings:
     path: Assets/Scenes/SpawnRoomTestScene.unity
     guid: 3f5c4a0c2dfa28c4f9517014324b64e5
   - enabled: 1
-    path: Assets/Scenes/UIScene.unity
-    guid: 3500e8f7c5c292e4bb1e2439de51d189
+    path: Assets/Scenes/MainScene.unity
+    guid: 806cb2d99cbf4564ba8746c3a4263b8f
   m_configObjects: {}
