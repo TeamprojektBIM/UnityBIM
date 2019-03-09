@@ -1,5 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Unity/Assets/DistanceTool/Example/DistanceTool.unity.meta
 guid: dfdc2be82d74a4cdaabca80c03602355
+=======
+guid: 0bd2f8670f7a74d549050c3b9c77f34b
+timeCreated: 1521561438
+licenseType: Pro
+>>>>>>> remotes/origin/josua:Unity/Assets/GoogleARCore/CLI/augmented_image_cli_win.exe.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
