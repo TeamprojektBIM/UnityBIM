@@ -34,6 +34,7 @@ namespace GoogleARCore.Examples.Common
         /// </summary>
         public GameObject DetectedPlanePrefab;
         public GameObject planeDetectionPanel;
+        public GameObject bottomMenuPanel;
 
 
         /// <summary>
@@ -64,13 +65,25 @@ namespace GoogleARCore.Examples.Common
                 return;
             }
 
-            if (m_NewPlanes.Count > 0)
-            {
-                planeDetectionPanel.SetActive(false);
-            }
+            //Josua - The amount of detected planes of the last update, this is used to execute the OnPlaneDetectionFinished only on time, after the first detection of a plane
+            var detectedPlanesOfLastUpdate = m_NewPlanes.Count;
 
             // Iterate over planes found in this frame and instantiate corresponding GameObjects to visualize them.
             Session.GetTrackables<DetectedPlane>(m_NewPlanes, TrackableQueryFilter.New);
+
+            //Josua - When in this update more than 0 planes were found and in the last update none, then initialize OnPlateDetectionFinished
+            //This is important, otherwise the OnPlaneDetectionFinished would be called every update
+            var detectedPlanesOfThisUpdate = m_NewPlanes.Count;
+            if (detectedPlanesOfLastUpdate == 0 && detectedPlanesOfThisUpdate > 0)
+            {
+                OnPlaneDetectionFinished();
+            }
+            else if (detectedPlanesOfLastUpdate > 0 && detectedPlanesOfThisUpdate == 0)
+            {
+                OnPlanesLost();
+            }
+
+
             for (int i = 0; i < m_NewPlanes.Count; i++)
             {
                 // Instantiate a plane visualization prefab and set it to track the new plane. The transform is set to
@@ -84,6 +97,18 @@ namespace GoogleARCore.Examples.Common
         {
             GameObject containerObject = GameObject.Find(Constants.GlobalDataContainer);
             container = containerObject.GetComponent<GlobalDataContainer>();
+        }
+
+        public void OnPlaneDetectionFinished()
+        {
+            planeDetectionPanel.SetActive(false);
+            bottomMenuPanel.SetActive(true);
+        }
+
+        public void OnPlanesLost()
+        {
+            planeDetectionPanel.SetActive(true);
+            bottomMenuPanel.SetActive(false);
         }
     }
 }
