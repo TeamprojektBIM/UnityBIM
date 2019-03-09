@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100292, guid: 91b0cfebbaa24214a847e4c0b05a8e49, type: 3}
       propertyPath: m_Name
-      value: BIM_TestModell3
+      value: BIM_TestModell3 Variant
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 91b0cfebbaa24214a847e4c0b05a8e49, type: 3}
       propertyPath: m_IsActive
@@ -58,6 +58,18 @@ PrefabInstance:
     - target: {fileID: 400292, guid: 91b0cfebbaa24214a847e4c0b05a8e49, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400292, guid: 91b0cfebbaa24214a847e4c0b05a8e49, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 400292, guid: 91b0cfebbaa24214a847e4c0b05a8e49, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 400292, guid: 91b0cfebbaa24214a847e4c0b05a8e49, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91b0cfebbaa24214a847e4c0b05a8e49, type: 3}

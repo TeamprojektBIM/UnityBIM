@@ -6,13 +6,19 @@ using GoogleARCore;
 public class SpawnRoom : MonoBehaviour
 {
     private float yOffset;
-    private DataContainer cont;
 
     private bool ready = false;
+    private DetectedPlane detectedPlane;
+    private GameObject room;
+    private Anchor anchor;
 
-    public void spawnARoom( Transform spawnPoint)
+    public GameObject roomPrefab;
+
+    public void spawnARoom(TrackableHit spawnPoint)
     {
-        cont = GetComponent<DataContainer>();
+        // cont = GetComponent<DataContainer>();
+
+
 
         // The tracking state must be FrameTrackingState.Tracking
         // in order to access the Frame.
@@ -21,37 +27,34 @@ public class SpawnRoom : MonoBehaviour
             return;
         }
 
+
+         detectedPlane = spawnPoint.Trackable as DetectedPlane;
         createAnchor(spawnPoint);
     }
 
-    private void createAnchor( Transform spawnPoint)
+    private void createAnchor(TrackableHit spawnPoint)
     {
 
-        // Create the anchor at that point.
-        if (cont.GetAnchor() != null)
-        {
-            DestroyObject(cont.GetAnchor());
-        }
-        cont.setAnchor(cont.GetDetectedPlane().CreateAnchor(
-            new Pose(spawnPoint.position, Quaternion.identity)));
+  
+         anchor =(detectedPlane.CreateAnchor(
+            new Pose(spawnPoint.Pose.position, Quaternion.identity)));
 
-        Debug.Log("peace");
         // Record the y offset from the plane.
-        yOffset = transform.position.y - cont.GetDetectedPlane().CenterPose.position.y;
+        // yOffset = transform.position.y - detectedPlane.CenterPose.position.y;
 
-        if (cont.getSpawnedRoom() != null)
+        if (room != null)
         {
-            DestroyImmediate(cont.getSpawnedRoom());
+            DestroyImmediate(room);
         }
 
-        Vector3 spawnPos = cont.GetDetectedPlane().CenterPose.position;
+        Vector3 spawnPos = spawnPoint.Pose.position;
 
         // Not anchored, it is rigidbody that is influenced by the physics engine.
-        GameObject room = Instantiate(cont.roomPrefab, spawnPos,
-                Quaternion.identity, transform);
-        cont.setSpawnedRoom(room);
+         room = Instantiate(roomPrefab, spawnPos,
+                Quaternion.identity);
+     
 
-        cont.getSpawnedRoom().transform.position = spawnPoint.position;
-        cont.getSpawnedRoom().transform.SetParent(cont.GetAnchor().transform);
+        room.transform.position = spawnPoint.Pose.position;
+        room.transform.SetParent(anchor.transform);
     }
 }

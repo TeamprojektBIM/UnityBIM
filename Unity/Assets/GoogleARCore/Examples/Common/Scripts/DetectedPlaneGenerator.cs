@@ -33,6 +33,7 @@ namespace GoogleARCore.Examples.Common
         /// A prefab for tracking and visualizing detected planes.
         /// </summary>
         public GameObject DetectedPlanePrefab;
+        public GameObject planeDetectionPanel;
 
         /// <summary>
         /// A list to hold new planes ARCore began tracking in the current frame. This object is used across
@@ -49,6 +50,11 @@ namespace GoogleARCore.Examples.Common
             if (Session.Status != SessionStatus.Tracking)
             {
                 return;
+            }
+
+            if (m_NewPlanes.Count > 0)
+            {
+                planeDetectionPanel.SetActive(false);
             }
 
             // Iterate over planes found in this frame and instantiate corresponding GameObjects to visualize them.
