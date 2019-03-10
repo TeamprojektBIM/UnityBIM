@@ -5,11 +5,8 @@ using UnityEngine.UI;
 
 public class NextButton : MonoBehaviour
 {
-
-    public GameObject roomSelectionPanel;
-    public GameObject planeDetectionPanel;
     private GlobalDataContainer container;
-    
+
 
     // Start is called before the first frame update
     void Start()
@@ -32,8 +29,6 @@ public class NextButton : MonoBehaviour
 
     void OnClick()
     {
-        roomSelectionPanel.SetActive(false);
-        container.RoomSelected = false;
-        planeDetectionPanel.SetActive(true);
+        container.CurrentState = States.PlaneDetection;
     }
 }

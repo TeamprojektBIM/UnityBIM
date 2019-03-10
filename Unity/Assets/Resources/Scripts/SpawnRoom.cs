@@ -5,7 +5,7 @@ using GoogleARCore;
 
 public class SpawnRoom : MonoBehaviour
 {
-        
+
     private DetectedPlane detectedPlane;
     private GameObject room;
     private Anchor anchor;
@@ -17,12 +17,8 @@ public class SpawnRoom : MonoBehaviour
     {
         FindDataContainer();
     }
-    public void spawnARoom(TrackableHit spawnPoint)
+    public void spawnARoom(TrackableHit spawnPoint, Quaternion rotation)
     {
-        // cont = GetComponent<DataContainer>();
-
-
-
         // The tracking state must be FrameTrackingState.Tracking
         // in order to access the Frame.
         if (Session.Status != SessionStatus.Tracking)
@@ -32,18 +28,18 @@ public class SpawnRoom : MonoBehaviour
 
 
         detectedPlane = spawnPoint.Trackable as DetectedPlane;
-        createAnchor(spawnPoint);
+        if (anchor == null)
+        {
+            createAnchor(spawnPoint, rotation);
+        }
     }
 
-    private void createAnchor(TrackableHit spawnPoint)
+    private void createAnchor(TrackableHit spawnPoint, Quaternion rotation)
     {
 
 
         anchor = (detectedPlane.CreateAnchor(
            new Pose(spawnPoint.Pose.position, Quaternion.identity)));
-
-        // Record the y offset from the plane.
-        // yOffset = transform.position.y - detectedPlane.CenterPose.position.y;
 
         if (room != null)
         {
@@ -53,9 +49,7 @@ public class SpawnRoom : MonoBehaviour
         Vector3 spawnPos = spawnPoint.Pose.position;
 
         // Not anchored, it is rigidbody that is influenced by the physics engine.
-        room = Instantiate(roomPrefab, spawnPos,
-               Quaternion.identity);
-
+        room = Instantiate(roomPrefab, spawnPos, rotation);
 
         room.transform.position = spawnPoint.Pose.position;
         room.transform.SetParent(anchor.transform);

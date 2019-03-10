@@ -3,7 +3,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.EventSystems;
 
 #if UNITY_EDITOR
 // Set up touch input propagation while using Instant Preview in the editor.
@@ -11,8 +11,6 @@ using Input = GoogleARCore.InstantPreviewInput;
 #endif
 public class PlacementMarker : MonoBehaviour
 {
-
-
     // Camera used for raycasting screen point.
     private Camera firstPersonCamera;
 
@@ -44,7 +42,6 @@ public class PlacementMarker : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         // The session status must be Tracking in order to access the Frame.
         if (Session.Status != SessionStatus.Tracking)
         {
@@ -54,18 +51,19 @@ public class PlacementMarker : MonoBehaviour
         }
         Screen.sleepTimeout = SleepTimeout.NeverSleep;
 
-
         ProcessTouch();
         if (marker != null)
         {
             RaycastCenter();
         }
-
-
     }
 
     void ProcessTouch()
     {
+        if (EventSystem.current.IsPointerOverGameObject())
+        {
+            return;
+        }
         Touch touch;
         if (Input.touchCount != 1 ||
             (touch = Input.GetTouch(0)).phase != TouchPhase.Began)
@@ -82,8 +80,7 @@ public class PlacementMarker : MonoBehaviour
         {
             if (marker != null)
             {
-                Debug.Log(spanwRoom);
-                spanwRoom.spawnARoom(hit);
+                spanwRoom.spawnARoom(hit, marker.transform.rotation);
             }
             else
             {
