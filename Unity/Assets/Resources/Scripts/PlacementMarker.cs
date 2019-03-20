@@ -80,7 +80,7 @@ public class PlacementMarker : MonoBehaviour
         {
             if (marker != null)
             {
-                spanwRoom.spawnARoom(hit, marker.transform.rotation);
+                spanwRoom.spawnARoom(hit, marker.transform);
             }
             else
             {
@@ -92,7 +92,7 @@ public class PlacementMarker : MonoBehaviour
 
     private void SpawnMarker(DetectedPlane detectedPlane)
     {
-        marker = Instantiate(markerPrefab, detectedPlane.CenterPose.position, Quaternion.identity);
+        marker = Instantiate(markerPrefab, detectedPlane.CenterPose.position, Quaternion.identity, this.transform);
     }
 
     private void RaycastCenter()

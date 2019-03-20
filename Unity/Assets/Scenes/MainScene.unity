@@ -1359,7 +1359,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1030404859}
   - component: {fileID: 1030404858}
-  - component: {fileID: 1030404861}
   - component: {fileID: 1030404860}
   m_Layer: 0
   m_Name: PlacementMarkerController
@@ -1408,22 +1407,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7889fbf1f07939d45883e84bc2115fc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roomPrefab: {fileID: 9049484406637836010, guid: c298fb8b01906a24ba1a2b0a13599272,
-    type: 3}
---- !u!114 &1030404861
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1030404857}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ce93959ec7cd1d41bd2345ba290a633, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  firstPersonCamera: {fileID: 896679035}
-  roomPrefab: {fileID: 2057489716654981839, guid: 181993a05c6581642ba78eddf94e4d6f,
+  roomPrefab: {fileID: 1112899961341823184, guid: 3e5928e69200fa043b5fdc6870569f11,
     type: 3}
 --- !u!1 &1054692080
 GameObject:

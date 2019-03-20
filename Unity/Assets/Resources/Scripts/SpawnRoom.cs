@@ -17,7 +17,7 @@ public class SpawnRoom : MonoBehaviour
     {
         FindDataContainer();
     }
-    public void spawnARoom(TrackableHit spawnPoint, Quaternion rotation)
+    public void spawnARoom(TrackableHit spawnPoint, Transform markerTransform)
     {
         // The tracking state must be FrameTrackingState.Tracking
         // in order to access the Frame.
@@ -30,29 +30,39 @@ public class SpawnRoom : MonoBehaviour
         detectedPlane = spawnPoint.Trackable as DetectedPlane;
         if (anchor == null)
         {
-            createAnchor(spawnPoint, rotation);
+            createAnchor(spawnPoint, markerTransform);
         }
     }
 
-    private void createAnchor(TrackableHit spawnPoint, Quaternion rotation)
+    private void createAnchor(TrackableHit spawnPoint, Transform markerTransform)
     {
 
 
         anchor = (detectedPlane.CreateAnchor(
-           new Pose(spawnPoint.Pose.position, Quaternion.identity)));
+           new Pose(spawnPoint.Pose.position, markerTransform.rotation)));
 
         if (room != null)
         {
             DestroyImmediate(room);
         }
 
-        Vector3 spawnPos = spawnPoint.Pose.position;
+        Vector3 spawnPos = markerTransform.position;
 
         // Not anchored, it is rigidbody that is influenced by the physics engine.
-        room = Instantiate(roomPrefab, spawnPos, rotation);
 
-        room.transform.position = spawnPoint.Pose.position;
+        room = Instantiate(roomPrefab, spawnPos, markerTransform.rotation);
+
+        // Vector3 scale = room.transform.localScale;
+        // scale += new Vector3(1000, 1000, 1000);
+        // room.transform.localScale = scale;
+        room.transform.position = markerTransform.position;
         room.transform.SetParent(anchor.transform);
+
+        GameObject marker = GameObject.Find("PlacementMarkerController");
+        marker.SetActive(false);
+        GameObject planeGenerator = GameObject.Find("Plane Generator");
+        planeGenerator.SetActive(false);
+
     }
 
     private void FindDataContainer()
