@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 #if UNITY_EDITOR
 // Set up touch input propagation while using Instant Preview in the editor.
@@ -18,12 +19,14 @@ public class PlacementMarker : MonoBehaviour
     private GameObject markerPrefab;
 
     private SpawnRoom spanwRoom;
-    private GameObject marker;
+    private List<GameObject> marker;
     private GlobalDataContainer container;
+    private Anchor anchor;
 
     void Start()
     {
         FindDataContainer();
+        marker = new List<GameObject>();
         firstPersonCamera = container.FirstPersonCamera;
         spanwRoom = GetComponent<SpawnRoom>();
 
@@ -52,11 +55,34 @@ public class PlacementMarker : MonoBehaviour
         Screen.sleepTimeout = SleepTimeout.NeverSleep;
 
         ProcessTouch();
-        if (marker != null)
+        if (marker.Count > 0)
         {
             RaycastCenter();
         }
+
+        if (marker.Count > 2)
+        {
+            marker[marker.Count - 1].SetActive(false);
+        }
+        //only for testing
+        MeassureDistance();
     }
+
+    private void MeassureDistance()
+    {
+        if (marker.Count > 2)
+        {
+            var distance = Vector3.Distance(marker[0].transform.position, marker[1].transform.position);
+            Debug.Log("Distance: " + distance);
+
+            GameObject.Find("MarkerDistanceText").GetComponent<Text>().text = "Distance: " + distance;
+        }
+    }
+    private Quaternion GetRotation()
+    {
+        return Quaternion.FromToRotation(marker[0].transform.position, marker[1].transform.position);
+    }
+
 
     void ProcessTouch()
     {
@@ -78,21 +104,30 @@ public class PlacementMarker : MonoBehaviour
 
         if (Frame.Raycast(touch.position.x, touch.position.y, raycastFilter, out hit))
         {
-            if (marker != null)
+            if (marker.Count > 2)
             {
-                spanwRoom.spawnARoom(hit, marker.transform);
+                spanwRoom.spawnARoom(hit, marker[0].transform, GetRotation());
             }
             else
             {
                 SpawnMarker(hit.Trackable as DetectedPlane);
             }
-
         }
     }
 
     private void SpawnMarker(DetectedPlane detectedPlane)
     {
-        marker = Instantiate(markerPrefab, detectedPlane.CenterPose.position, Quaternion.identity, this.transform);
+        if (marker.Count <= 2)
+        {
+            var localMarker = Instantiate(markerPrefab, detectedPlane.CenterPose.position, Quaternion.identity, this.transform);
+
+            if (anchor == null)
+            {
+                anchor = detectedPlane.CreateAnchor(Pose.identity);
+            }
+            localMarker.transform.SetParent(anchor.transform);
+            marker.Add(localMarker);
+        }
     }
 
     private void RaycastCenter()
@@ -103,26 +138,24 @@ public class PlacementMarker : MonoBehaviour
         // If it hits an ARCore plane, move the pointer to that location.
         if (Frame.Raycast(Screen.width / 2, Screen.height / 2, raycastFilter, out hit))
         {
-
-
             CenterMarkerOnScreen(hit);
-
             RotateToCamera();
-
         }
     }
 
     private void CenterMarkerOnScreen(TrackableHit hit)
     {
         Vector3 hitPoint = hit.Pose.position;
-
-        marker.transform.position = new Vector3(hitPoint.x, marker.transform.position.y, hitPoint.z);
+        var activeMarker = marker[marker.Count - 1];
+        activeMarker.transform.position = new Vector3(hitPoint.x, activeMarker.transform.position.y, hitPoint.z);
     }
 
     private void RotateToCamera()
     {
-        Vector3 cameraPlanePostion = new Vector3(firstPersonCamera.transform.position.x, marker.transform.position.y, firstPersonCamera.transform.position.z);
-        marker.transform.LookAt(cameraPlanePostion);
+        var activeMarker = marker[marker.Count - 1];
+        Vector3 cameraPlanePostion = new Vector3(firstPersonCamera.transform.position.x, activeMarker.transform.position.y, firstPersonCamera.transform.position.z);
+
+        activeMarker.transform.LookAt(cameraPlanePostion);
     }
 
     private void FindDataContainer()
