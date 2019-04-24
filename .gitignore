@@ -82,4 +82,5 @@ Thumbs.db
 settings.json
 manifest.json
 /Unity/Packages/manifest.json
+/Unity/Assets/Ignore
 
