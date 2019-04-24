@@ -22,8 +22,10 @@ public class Scanner : MonoBehaviour
         var minY = scanner.anchorMin.y;
         var maxY = scanner.anchorMax.y;
 
+        /*
         Debug.Log("miny" + minY);
         Debug.Log("maxy" + maxY);
+        */
 
         if (minY <= 0)
         {

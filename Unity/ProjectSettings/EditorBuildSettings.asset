@@ -6,14 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/ARCoreLegendaryCopyPasteScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
     path: Assets/GoogleARCore/Examples/HelloAR/Scenes/HelloAR.unity
     guid: e6a6fa04348cb45c9b0221eb19c946da
   - enabled: 0
-    path: Assets/Scenes/SpawnRoomTestScene.unity
-    guid: 3f5c4a0c2dfa28c4f9517014324b64e5
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/MainScene.unity
     guid: 806cb2d99cbf4564ba8746c3a4263b8f

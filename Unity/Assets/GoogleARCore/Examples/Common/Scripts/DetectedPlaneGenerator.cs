@@ -40,36 +40,19 @@ namespace GoogleARCore.Examples.Common
         /// </summary>
         private List<DetectedPlane> m_NewPlanes = new List<DetectedPlane>();
 
-        private List<DetectedPlane> allPlanes = new List<DetectedPlane>();
-        private GlobalDataContainer container;
-
         /// <summary>
         /// The Unity Update method.
         /// </summary>
-
-        public void Start()
-        {
-            FindDataContainer();
-        }
         public void Update()
         {
-
-            if (container.CurrentState == States.RoomSelection)
-            {
-                return;
-            }
             // Check that motion tracking is tracking.
-            else if (Session.Status != SessionStatus.Tracking)
+            if (Session.Status != SessionStatus.Tracking)
             {
                 return;
             }
-
-
 
             // Iterate over planes found in this frame and instantiate corresponding GameObjects to visualize them.
             Session.GetTrackables<DetectedPlane>(m_NewPlanes, TrackableQueryFilter.New);
-
-
             for (int i = 0; i < m_NewPlanes.Count; i++)
             {
                 // Instantiate a plane visualization prefab and set it to track the new plane. The transform is set to
@@ -78,23 +61,6 @@ namespace GoogleARCore.Examples.Common
                 GameObject planeObject = Instantiate(DetectedPlanePrefab, Vector3.zero, Quaternion.identity, transform);
                 planeObject.GetComponent<DetectedPlaneVisualizer>().Initialize(m_NewPlanes[i]);
             }
-
-            Session.GetTrackables<DetectedPlane>(allPlanes, TrackableQueryFilter.All);
-            if (allPlanes.Count > 0)
-            {
-                container.CurrentState = States.ModelPlacement;
-            }
-            else
-            {
-                container.CurrentState = States.PlaneDetection;
-            }
         }
-        private void FindDataContainer()
-        {
-            GameObject containerObject = GameObject.Find(Constants.GlobalDataContainer);
-            container = containerObject.GetComponent<GlobalDataContainer>();
-        }
-
-
     }
 }

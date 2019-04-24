@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1439,6 +1439,7 @@ GameObject:
   - component: {fileID: 1030404859}
   - component: {fileID: 1030404858}
   - component: {fileID: 1030404860}
+  - component: {fileID: 1030404861}
   m_Layer: 0
   m_Name: PlacementMarkerController
   m_TagString: Untagged
@@ -1453,7 +1454,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1030404857}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 33b0204b354a136498126d42b95b62b2, type: 3}
   m_Name: 
@@ -1486,8 +1487,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7889fbf1f07939d45883e84bc2115fc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roomPrefab: {fileID: 1112899961341792135, guid: 3e5928e69200fa043b5fdc6870569f11,
+  roomPrefab: {fileID: 9139912812910779550, guid: c750d72480979da45b39c4c3cba49b44,
     type: 3}
+--- !u!114 &1030404861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1030404857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e212bb29d6f9c2644af193a8ba184851, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ui: {fileID: 1233654908}
 --- !u!1 &1054692080
 GameObject:
   m_ObjectHideFlags: 0
