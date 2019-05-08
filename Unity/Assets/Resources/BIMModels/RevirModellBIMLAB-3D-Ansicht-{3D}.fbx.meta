@@ -1,0 +1,520 @@
+fileFormatVersion: 2
+guid: b771ac8aaf159af48a922c1266f5551a
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: '3D-Ansicht: {3D}'
+    100002: Basiswand GK 12.5 [407908]
+    100004: Basiswand GK 12.5 [407909]
+    100006: Basiswand GK 12.5 [407910]
+    100008: Basiswand GK 12.5 [407911]
+    100010: Basiswand GK 12.5 [407912]
+    100012: Basiswand GK 12.5 [407913]
+    100014: Basiswand GK 12.5 [407914]
+    100016: Basiswand GK 12.5 [407915]
+    100018: Basiswand GK 12.5 [407916]
+    100020: Basiswand GK 12.5 [407917]
+    100022: Basiswand GK 12.5 [407928]
+    100024: Basiswand GK 12.5 [407929]
+    100026: Basiswand GK 12.5 [407930]
+    100028: Basiswand GK 12.5 [407931]
+    100030: Basiswand GK 12.5 [407932]
+    100032: Basiswand Stahlblech [400619]
+    100034: Basiswand Stahlblech [401456]
+    100036: Basiswand Stahlblech [401763]
+    100038: Basiswand STB 25.0 [383213]
+    100040: Basiswand STB 25.0 [383468]
+    100042: Basiswand STB 25.0 [384045]
+    100044: Bogen Edelstahl - Press Standard [448455]
+    100046: Bogen Edelstahl - Press Standard [448521]
+    100048: Conduit Elbow - without Fittings - RNC Standard [546192]
+    100050: Conduit Elbow - without Fittings - RNC Standard [546194]
+    100052: Conduit Elbow - without Fittings - RNC Standard [546196]
+    100054: Conduit Elbow - without Fittings - RNC Standard [546461]
+    100056: Conduit Elbow - without Fittings - RNC Standard [546463]
+    100058: Conduit Elbow - without Fittings - RNC Standard [547955]
+    100060: Conduit Elbow - without Fittings - RNC Standard [547958]
+    100062: Conduit Junction Box - Tee - PVC Standard [547467]
+    100064: "Drehfl\xFCgel 1-flg - Stahlzarge 88.5 x 2.26 [408520]"
+    100066: Fenster - Festverglasung Fenster - Festverglasung 2 [388118]
+    100068: Fenster - Festverglasung Fenster - Festverglasung 2 [388461]
+    100070: Fenster - Festverglasung Fenster - Festverglasung 2 [389329]
+    100072: Fenster - Festverglasung Fenster - Festverglasung 3 [387356]
+    100074: Fenster - Festverglasung Fenster - Festverglasung 3 [388588]
+    100076: Fenster - Festverglasung Fenster - Festverglasung 3 [388737]
+    100078: Fenster - Festverglasung Fenster - Festverglasung 3 [389747]
+    100080: Fenster - Festverglasung Fenster - Festverglasung 3 [390037]
+    100082: Fenster - Festverglasung Fenster - Festverglasung 4 [388834]
+    100084: Fenster - Festverglasung Fenster - Festverglasung 5 [409652]
+    100086: Fenster - Festverglasung Fenster - Festverglasung 5 [409919]
+    100088: Fenster - Festverglasung Fenster - Festverglasung 5 [410030]
+    100090: Fenster - Festverglasung Fenster - Festverglasung 5 [410087]
+    100092: Fenster - Festverglasung Fenster - Festverglasung [387141]
+    100094: Fenster 1-flg - Anschlag 1.01 x 1.01 2 [384622]
+    100096: Fenster 1-flg - Anschlag 1.488 * 1.149 [388971]
+    100098: Fenster 1-flg - Anschlag 1.488 * 1.149 [389576]
+    100100: Geschossdecke STB 10.0 2 [398551]
+    100102: Geschossdecke STB 10.0 2 [399023]
+    100104: Geschossdecke STB 10.0 2 [399793]
+    100106: Geschossdecke STB 10.0 2 [414127]
+    100108: Geschossdecke STB 20.0  FB 10.0 [375556]
+    100110: Geschossdecke STB 25.0 [376640]
+    100112: "HE-B-St\xFCtze HEB160 [413266]"
+    100114: "HE-B-St\xFCtze HEB160 [413384]"
+    100116: "H\xE4ngelampe - Linear - 2 Lampen 1200mm [436475]"
+    100118: "H\xE4ngelampe - Linear - 2 Lampen 1200mm [436475]_1"
+    100120: "H\xE4ngelampe - Linear - 2 Lampen 1200mm [436623]"
+    100122: "H\xE4ngelampe - Linear - 2 Lampen 1200mm [436623]_2"
+    100124: "H\xE4ngelampe - Linear - 2 Lampen 1200mm [436707]"
+    100126: "H\xE4ngelampe - Linear - 2 Lampen 1200mm [436707]_3"
+    100128: "H\xE4ngelampe - Linear - 2 Lampen 1200mm [436841]"
+    100130: "H\xE4ngelampe - Linear - 2 Lampen 1200mm [436841]_4"
+    100132: Kabeltrasse mit Formteilen Kabeltrasse [410842]
+    100134: Kabeltrasse mit Formteilen Kabeltrasse [410910]
+    100136: Leerrohr mit Formteilen Leerrohr [443889]
+    100138: Leerrohr mit Formteilen Leerrohr [451478]
+    100140: Leerrohr mit Formteilen Leerrohr [546188]
+    100142: Leerrohr mit Formteilen Leerrohr [546189]
+    100144: Leerrohr mit Formteilen Leerrohr [546315]
+    100146: Leerrohr mit Formteilen Leerrohr [546381]
+    100148: Leerrohr mit Formteilen Leerrohr [546459]
+    100150: Leerrohr mit Formteilen Leerrohr [547302]
+    100152: Leerrohr mit Formteilen Leerrohr [547468]
+    100154: Leerrohr mit Formteilen Leerrohr [547667]
+    100156: Leerrohr mit Formteilen Leerrohr [547948]
+    100158: Leerrohr ohne Formteile Leerrohr [443016]
+    100160: Leerrohr ohne Formteile Leerrohr [443454]
+    100162: Lichtschalter Aufputz 1-polig [431537]
+    100164: Oval Standard [548676]
+    100166: //RootNode
+    100168: Rohrtypen Edelstahl [447410]
+    100170: Rohrtypen Edelstahl [448238]
+    100172: Rohrtypen Edelstahl [448294]
+    100174: Rohrtypen Edelstahl [448355]
+    100176: Rohrtypen Edelstahl [448504]
+    100178: "STB St\xFCtze - rund STB d=40 [379217]"
+    100180: Steckdose 1-polig Aufputz Standard [422017]
+    100182: "T-St\xFCck Edelstahl - Press Standard [448503]"
+    400000: '3D-Ansicht: {3D}'
+    400002: Basiswand GK 12.5 [407908]
+    400004: Basiswand GK 12.5 [407909]
+    400006: Basiswand GK 12.5 [407910]
+    400008: Basiswand GK 12.5 [407911]
+    400010: Basiswand GK 12.5 [407912]
+    400012: Basiswand GK 12.5 [407913]
+    400014: Basiswand GK 12.5 [407914]
+    400016: Basiswand GK 12.5 [407915]
+    400018: Basiswand GK 12.5 [407916]
+    400020: Basiswand GK 12.5 [407917]
+    400022: Basiswand GK 12.5 [407928]
+    400024: Basiswand GK 12.5 [407929]
+    400026: Basiswand GK 12.5 [407930]
+    400028: Basiswand GK 12.5 [407931]
+    400030: Basiswand GK 12.5 [407932]
+    400032: Basiswand Stahlblech [400619]
+    400034: Basiswand Stahlblech [401456]
+    400036: Basiswand Stahlblech [401763]
+    400038: Basiswand STB 25.0 [383213]
+    400040: Basiswand STB 25.0 [383468]
+    400042: Basiswand STB 25.0 [384045]
+    400044: Bogen Edelstahl - Press Standard [448455]
+    400046: Bogen Edelstahl - Press Standard [448521]
+    400048: Conduit Elbow - without Fittings - RNC Standard [546192]
+    400050: Conduit Elbow - without Fittings - RNC Standard [546194]
+    400052: Conduit Elbow - without Fittings - RNC Standard [546196]
+    400054: Conduit Elbow - without Fittings - RNC Standard [546461]
+    400056: Conduit Elbow - without Fittings - RNC Standard [546463]
+    400058: Conduit Elbow - without Fittings - RNC Standard [547955]
+    400060: Conduit Elbow - without Fittings - RNC Standard [547958]
+    400062: Conduit Junction Box - Tee - PVC Standard [547467]
+    400064: "Drehfl\xFCgel 1-flg - Stahlzarge 88.5 x 2.26 [408520]"
+    400066: Fenster - Festverglasung Fenster - Festverglasung 2 [388118]
+    400068: Fenster - Festverglasung Fenster - Festverglasung 2 [388461]
+    400070: Fenster - Festverglasung Fenster - Festverglasung 2 [389329]
+    400072: Fenster - Festverglasung Fenster - Festverglasung 3 [387356]
+    400074: Fenster - Festverglasung Fenster - Festverglasung 3 [388588]
+    400076: Fenster - Festverglasung Fenster - Festverglasung 3 [388737]
+    400078: Fenster - Festverglasung Fenster - Festverglasung 3 [389747]
+    400080: Fenster - Festverglasung Fenster - Festverglasung 3 [390037]
+    400082: Fenster - Festverglasung Fenster - Festverglasung 4 [388834]
+    400084: Fenster - Festverglasung Fenster - Festverglasung 5 [409652]
+    400086: Fenster - Festverglasung Fenster - Festverglasung 5 [409919]
+    400088: Fenster - Festverglasung Fenster - Festverglasung 5 [410030]
+    400090: Fenster - Festverglasung Fenster - Festverglasung 5 [410087]
+    400092: Fenster - Festverglasung Fenster - Festverglasung [387141]
+    400094: Fenster 1-flg - Anschlag 1.01 x 1.01 2 [384622]
+    400096: Fenster 1-flg - Anschlag 1.488 * 1.149 [388971]
+    400098: Fenster 1-flg - Anschlag 1.488 * 1.149 [389576]
+    400100: Geschossdecke STB 10.0 2 [398551]
+    400102: Geschossdecke STB 10.0 2 [399023]
+    400104: Geschossdecke STB 10.0 2 [399793]
+    400106: Geschossdecke STB 10.0 2 [414127]
+    400108: Geschossdecke STB 20.0  FB 10.0 [375556]
+    400110: Geschossdecke STB 25.0 [376640]
+    400112: "HE-B-St\xFCtze HEB160 [413266]"
+    400114: "HE-B-St\xFCtze HEB160 [413384]"
+    400116: "H\xE4ngelampe - Linear - 2 Lampen 1200mm [436475]"
+    400118: "H\xE4ngelampe - Linear - 2 Lampen 1200mm [436475]_1"
+    400120: "H\xE4ngelampe - Linear - 2 Lampen 1200mm [436623]"
+    400122: "H\xE4ngelampe - Linear - 2 Lampen 1200mm [436623]_2"
+    400124: "H\xE4ngelampe - Linear - 2 Lampen 1200mm [436707]"
+    400126: "H\xE4ngelampe - Linear - 2 Lampen 1200mm [436707]_3"
+    400128: "H\xE4ngelampe - Linear - 2 Lampen 1200mm [436841]"
+    400130: "H\xE4ngelampe - Linear - 2 Lampen 1200mm [436841]_4"
+    400132: Kabeltrasse mit Formteilen Kabeltrasse [410842]
+    400134: Kabeltrasse mit Formteilen Kabeltrasse [410910]
+    400136: Leerrohr mit Formteilen Leerrohr [443889]
+    400138: Leerrohr mit Formteilen Leerrohr [451478]
+    400140: Leerrohr mit Formteilen Leerrohr [546188]
+    400142: Leerrohr mit Formteilen Leerrohr [546189]
+    400144: Leerrohr mit Formteilen Leerrohr [546315]
+    400146: Leerrohr mit Formteilen Leerrohr [546381]
+    400148: Leerrohr mit Formteilen Leerrohr [546459]
+    400150: Leerrohr mit Formteilen Leerrohr [547302]
+    400152: Leerrohr mit Formteilen Leerrohr [547468]
+    400154: Leerrohr mit Formteilen Leerrohr [547667]
+    400156: Leerrohr mit Formteilen Leerrohr [547948]
+    400158: Leerrohr ohne Formteile Leerrohr [443016]
+    400160: Leerrohr ohne Formteile Leerrohr [443454]
+    400162: Lichtschalter Aufputz 1-polig [431537]
+    400164: Oval Standard [548676]
+    400166: //RootNode
+    400168: Rohrtypen Edelstahl [447410]
+    400170: Rohrtypen Edelstahl [448238]
+    400172: Rohrtypen Edelstahl [448294]
+    400174: Rohrtypen Edelstahl [448355]
+    400176: Rohrtypen Edelstahl [448504]
+    400178: "STB St\xFCtze - rund STB d=40 [379217]"
+    400180: Steckdose 1-polig Aufputz Standard [422017]
+    400182: "T-St\xFCck Edelstahl - Press Standard [448503]"
+    2000000: '3D-Ansicht: {3D}'
+    2100000: No Name
+    2300000: Basiswand GK 12.5 [407908]
+    2300002: Basiswand GK 12.5 [407909]
+    2300004: Basiswand GK 12.5 [407910]
+    2300006: Basiswand GK 12.5 [407911]
+    2300008: Basiswand GK 12.5 [407912]
+    2300010: Basiswand GK 12.5 [407913]
+    2300012: Basiswand GK 12.5 [407914]
+    2300014: Basiswand GK 12.5 [407915]
+    2300016: Basiswand GK 12.5 [407916]
+    2300018: Basiswand GK 12.5 [407917]
+    2300020: Basiswand GK 12.5 [407928]
+    2300022: Basiswand GK 12.5 [407929]
+    2300024: Basiswand GK 12.5 [407930]
+    2300026: Basiswand GK 12.5 [407931]
+    2300028: Basiswand GK 12.5 [407932]
+    2300030: Basiswand Stahlblech [400619]
+    2300032: Basiswand Stahlblech [401456]
+    2300034: Basiswand Stahlblech [401763]
+    2300036: Basiswand STB 25.0 [383213]
+    2300038: Basiswand STB 25.0 [383468]
+    2300040: Basiswand STB 25.0 [384045]
+    2300042: Bogen Edelstahl - Press Standard [448455]
+    2300044: Bogen Edelstahl - Press Standard [448521]
+    2300046: Conduit Elbow - without Fittings - RNC Standard [546192]
+    2300048: Conduit Elbow - without Fittings - RNC Standard [546194]
+    2300050: Conduit Elbow - without Fittings - RNC Standard [546196]
+    2300052: Conduit Elbow - without Fittings - RNC Standard [546461]
+    2300054: Conduit Elbow - without Fittings - RNC Standard [546463]
+    2300056: Conduit Elbow - without Fittings - RNC Standard [547955]
+    2300058: Conduit Elbow - without Fittings - RNC Standard [547958]
+    2300060: Conduit Junction Box - Tee - PVC Standard [547467]
+    2300062: "Drehfl\xFCgel 1-flg - Stahlzarge 88.5 x 2.26 [408520]"
+    2300064: Fenster - Festverglasung Fenster - Festverglasung 2 [388118]
+    2300066: Fenster - Festverglasung Fenster - Festverglasung 2 [388461]
+    2300068: Fenster - Festverglasung Fenster - Festverglasung 2 [389329]
+    2300070: Fenster - Festverglasung Fenster - Festverglasung 3 [387356]
+    2300072: Fenster - Festverglasung Fenster - Festverglasung 3 [388588]
+    2300074: Fenster - Festverglasung Fenster - Festverglasung 3 [388737]
+    2300076: Fenster - Festverglasung Fenster - Festverglasung 3 [389747]
+    2300078: Fenster - Festverglasung Fenster - Festverglasung 3 [390037]
+    2300080: Fenster - Festverglasung Fenster - Festverglasung 4 [388834]
+    2300082: Fenster - Festverglasung Fenster - Festverglasung 5 [409652]
+    2300084: Fenster - Festverglasung Fenster - Festverglasung 5 [409919]
+    2300086: Fenster - Festverglasung Fenster - Festverglasung 5 [410030]
+    2300088: Fenster - Festverglasung Fenster - Festverglasung 5 [410087]
+    2300090: Fenster - Festverglasung Fenster - Festverglasung [387141]
+    2300092: Fenster 1-flg - Anschlag 1.01 x 1.01 2 [384622]
+    2300094: Fenster 1-flg - Anschlag 1.488 * 1.149 [388971]
+    2300096: Fenster 1-flg - Anschlag 1.488 * 1.149 [389576]
+    2300098: Geschossdecke STB 10.0 2 [398551]
+    2300100: Geschossdecke STB 10.0 2 [399023]
+    2300102: Geschossdecke STB 10.0 2 [399793]
+    2300104: Geschossdecke STB 10.0 2 [414127]
+    2300106: Geschossdecke STB 20.0  FB 10.0 [375556]
+    2300108: Geschossdecke STB 25.0 [376640]
+    2300110: "HE-B-St\xFCtze HEB160 [413266]"
+    2300112: "HE-B-St\xFCtze HEB160 [413384]"
+    2300114: "H\xE4ngelampe - Linear - 2 Lampen 1200mm [436475]"
+    2300116: "H\xE4ngelampe - Linear - 2 Lampen 1200mm [436623]"
+    2300118: "H\xE4ngelampe - Linear - 2 Lampen 1200mm [436707]"
+    2300120: "H\xE4ngelampe - Linear - 2 Lampen 1200mm [436841]"
+    2300122: Kabeltrasse mit Formteilen Kabeltrasse [410842]
+    2300124: Kabeltrasse mit Formteilen Kabeltrasse [410910]
+    2300126: Leerrohr mit Formteilen Leerrohr [443889]
+    2300128: Leerrohr mit Formteilen Leerrohr [451478]
+    2300130: Leerrohr mit Formteilen Leerrohr [546188]
+    2300132: Leerrohr mit Formteilen Leerrohr [546189]
+    2300134: Leerrohr mit Formteilen Leerrohr [546315]
+    2300136: Leerrohr mit Formteilen Leerrohr [546381]
+    2300138: Leerrohr mit Formteilen Leerrohr [546459]
+    2300140: Leerrohr mit Formteilen Leerrohr [547302]
+    2300142: Leerrohr mit Formteilen Leerrohr [547468]
+    2300144: Leerrohr mit Formteilen Leerrohr [547667]
+    2300146: Leerrohr mit Formteilen Leerrohr [547948]
+    2300148: Leerrohr ohne Formteile Leerrohr [443016]
+    2300150: Leerrohr ohne Formteile Leerrohr [443454]
+    2300152: Lichtschalter Aufputz 1-polig [431537]
+    2300154: Oval Standard [548676]
+    2300156: Rohrtypen Edelstahl [447410]
+    2300158: Rohrtypen Edelstahl [448238]
+    2300160: Rohrtypen Edelstahl [448294]
+    2300162: Rohrtypen Edelstahl [448355]
+    2300164: Rohrtypen Edelstahl [448504]
+    2300166: "STB St\xFCtze - rund STB d=40 [379217]"
+    2300168: Steckdose 1-polig Aufputz Standard [422017]
+    2300170: "T-St\xFCck Edelstahl - Press Standard [448503]"
+    3300000: Basiswand GK 12.5 [407908]
+    3300002: Basiswand GK 12.5 [407909]
+    3300004: Basiswand GK 12.5 [407910]
+    3300006: Basiswand GK 12.5 [407911]
+    3300008: Basiswand GK 12.5 [407912]
+    3300010: Basiswand GK 12.5 [407913]
+    3300012: Basiswand GK 12.5 [407914]
+    3300014: Basiswand GK 12.5 [407915]
+    3300016: Basiswand GK 12.5 [407916]
+    3300018: Basiswand GK 12.5 [407917]
+    3300020: Basiswand GK 12.5 [407928]
+    3300022: Basiswand GK 12.5 [407929]
+    3300024: Basiswand GK 12.5 [407930]
+    3300026: Basiswand GK 12.5 [407931]
+    3300028: Basiswand GK 12.5 [407932]
+    3300030: Basiswand Stahlblech [400619]
+    3300032: Basiswand Stahlblech [401456]
+    3300034: Basiswand Stahlblech [401763]
+    3300036: Basiswand STB 25.0 [383213]
+    3300038: Basiswand STB 25.0 [383468]
+    3300040: Basiswand STB 25.0 [384045]
+    3300042: Bogen Edelstahl - Press Standard [448455]
+    3300044: Bogen Edelstahl - Press Standard [448521]
+    3300046: Conduit Elbow - without Fittings - RNC Standard [546192]
+    3300048: Conduit Elbow - without Fittings - RNC Standard [546194]
+    3300050: Conduit Elbow - without Fittings - RNC Standard [546196]
+    3300052: Conduit Elbow - without Fittings - RNC Standard [546461]
+    3300054: Conduit Elbow - without Fittings - RNC Standard [546463]
+    3300056: Conduit Elbow - without Fittings - RNC Standard [547955]
+    3300058: Conduit Elbow - without Fittings - RNC Standard [547958]
+    3300060: Conduit Junction Box - Tee - PVC Standard [547467]
+    3300062: "Drehfl\xFCgel 1-flg - Stahlzarge 88.5 x 2.26 [408520]"
+    3300064: Fenster - Festverglasung Fenster - Festverglasung 2 [388118]
+    3300066: Fenster - Festverglasung Fenster - Festverglasung 2 [388461]
+    3300068: Fenster - Festverglasung Fenster - Festverglasung 2 [389329]
+    3300070: Fenster - Festverglasung Fenster - Festverglasung 3 [387356]
+    3300072: Fenster - Festverglasung Fenster - Festverglasung 3 [388588]
+    3300074: Fenster - Festverglasung Fenster - Festverglasung 3 [388737]
+    3300076: Fenster - Festverglasung Fenster - Festverglasung 3 [389747]
+    3300078: Fenster - Festverglasung Fenster - Festverglasung 3 [390037]
+    3300080: Fenster - Festverglasung Fenster - Festverglasung 4 [388834]
+    3300082: Fenster - Festverglasung Fenster - Festverglasung 5 [409652]
+    3300084: Fenster - Festverglasung Fenster - Festverglasung 5 [409919]
+    3300086: Fenster - Festverglasung Fenster - Festverglasung 5 [410030]
+    3300088: Fenster - Festverglasung Fenster - Festverglasung 5 [410087]
+    3300090: Fenster - Festverglasung Fenster - Festverglasung [387141]
+    3300092: Fenster 1-flg - Anschlag 1.01 x 1.01 2 [384622]
+    3300094: Fenster 1-flg - Anschlag 1.488 * 1.149 [388971]
+    3300096: Fenster 1-flg - Anschlag 1.488 * 1.149 [389576]
+    3300098: Geschossdecke STB 10.0 2 [398551]
+    3300100: Geschossdecke STB 10.0 2 [399023]
+    3300102: Geschossdecke STB 10.0 2 [399793]
+    3300104: Geschossdecke STB 10.0 2 [414127]
+    3300106: Geschossdecke STB 20.0  FB 10.0 [375556]
+    3300108: Geschossdecke STB 25.0 [376640]
+    3300110: "HE-B-St\xFCtze HEB160 [413266]"
+    3300112: "HE-B-St\xFCtze HEB160 [413384]"
+    3300114: "H\xE4ngelampe - Linear - 2 Lampen 1200mm [436475]"
+    3300116: "H\xE4ngelampe - Linear - 2 Lampen 1200mm [436623]"
+    3300118: "H\xE4ngelampe - Linear - 2 Lampen 1200mm [436707]"
+    3300120: "H\xE4ngelampe - Linear - 2 Lampen 1200mm [436841]"
+    3300122: Kabeltrasse mit Formteilen Kabeltrasse [410842]
+    3300124: Kabeltrasse mit Formteilen Kabeltrasse [410910]
+    3300126: Leerrohr mit Formteilen Leerrohr [443889]
+    3300128: Leerrohr mit Formteilen Leerrohr [451478]
+    3300130: Leerrohr mit Formteilen Leerrohr [546188]
+    3300132: Leerrohr mit Formteilen Leerrohr [546189]
+    3300134: Leerrohr mit Formteilen Leerrohr [546315]
+    3300136: Leerrohr mit Formteilen Leerrohr [546381]
+    3300138: Leerrohr mit Formteilen Leerrohr [546459]
+    3300140: Leerrohr mit Formteilen Leerrohr [547302]
+    3300142: Leerrohr mit Formteilen Leerrohr [547468]
+    3300144: Leerrohr mit Formteilen Leerrohr [547667]
+    3300146: Leerrohr mit Formteilen Leerrohr [547948]
+    3300148: Leerrohr ohne Formteile Leerrohr [443016]
+    3300150: Leerrohr ohne Formteile Leerrohr [443454]
+    3300152: Lichtschalter Aufputz 1-polig [431537]
+    3300154: Oval Standard [548676]
+    3300156: Rohrtypen Edelstahl [447410]
+    3300158: Rohrtypen Edelstahl [448238]
+    3300160: Rohrtypen Edelstahl [448294]
+    3300162: Rohrtypen Edelstahl [448355]
+    3300164: Rohrtypen Edelstahl [448504]
+    3300166: "STB St\xFCtze - rund STB d=40 [379217]"
+    3300168: Steckdose 1-polig Aufputz Standard [422017]
+    3300170: "T-St\xFCck Edelstahl - Press Standard [448503]"
+    4300000: Geschossdecke STB 20.0  FB 10.0 [375556]
+    4300002: Geschossdecke STB 25.0 [376640]
+    4300004: "STB St\xFCtze - rund STB d=40 [379217]"
+    4300006: Basiswand STB 25.0 [383213]
+    4300008: Basiswand STB 25.0 [383468]
+    4300010: Basiswand STB 25.0 [384045]
+    4300012: Fenster 1-flg - Anschlag 1.01 x 1.01 2 [384622]
+    4300014: Fenster - Festverglasung Fenster - Festverglasung [387141]
+    4300016: Fenster - Festverglasung Fenster - Festverglasung 3 [387356]
+    4300018: Fenster - Festverglasung Fenster - Festverglasung 2 [388118]
+    4300020: Fenster - Festverglasung Fenster - Festverglasung 4 [388834]
+    4300022: Fenster 1-flg - Anschlag 1.488 * 1.149 [388971]
+    4300024: Fenster - Festverglasung Fenster - Festverglasung 3 [389747]
+    4300026: Geschossdecke STB 10.0 2 [398551]
+    4300028: Geschossdecke STB 10.0 2 [399023]
+    4300030: Geschossdecke STB 10.0 2 [399793]
+    4300032: Basiswand Stahlblech [400619]
+    4300034: Basiswand Stahlblech [401456]
+    4300036: Basiswand Stahlblech [401763]
+    4300038: Basiswand GK 12.5 [407908]
+    4300040: Basiswand GK 12.5 [407909]
+    4300042: Basiswand GK 12.5 [407910]
+    4300044: Basiswand GK 12.5 [407911]
+    4300046: Basiswand GK 12.5 [407912]
+    4300048: Basiswand GK 12.5 [407913]
+    4300050: Basiswand GK 12.5 [407914]
+    4300052: Basiswand GK 12.5 [407915]
+    4300054: Basiswand GK 12.5 [407916]
+    4300056: Basiswand GK 12.5 [407917]
+    4300058: Basiswand GK 12.5 [407928]
+    4300060: Basiswand GK 12.5 [407929]
+    4300062: Basiswand GK 12.5 [407930]
+    4300064: Basiswand GK 12.5 [407931]
+    4300066: Basiswand GK 12.5 [407932]
+    4300068: "Drehfl\xFCgel 1-flg - Stahlzarge 88.5 x 2.26 [408520]"
+    4300070: Fenster - Festverglasung Fenster - Festverglasung 5 [409652]
+    4300072: Kabeltrasse mit Formteilen Kabeltrasse [410842]
+    4300074: Kabeltrasse mit Formteilen Kabeltrasse [410910]
+    4300076: "HE-B-St\xFCtze HEB160 [413266]"
+    4300078: Geschossdecke STB 10.0 2 [414127]
+    4300080: Steckdose 1-polig Aufputz Standard [422017]
+    4300082: Lichtschalter Aufputz 1-polig [431537]
+    4300084: "H\xE4ngelampe - Linear - 2 Lampen 1200mm [436475]"
+    4300086: Leerrohr ohne Formteile Leerrohr [443016]
+    4300088: Leerrohr ohne Formteile Leerrohr [443454]
+    4300090: Leerrohr mit Formteilen Leerrohr [443889]
+    4300092: Rohrtypen Edelstahl [447410]
+    4300094: Rohrtypen Edelstahl [448238]
+    4300096: Rohrtypen Edelstahl [448294]
+    4300098: Rohrtypen Edelstahl [448355]
+    4300100: Bogen Edelstahl - Press Standard [448455]
+    4300102: "T-St\xFCck Edelstahl - Press Standard [448503]"
+    4300104: Rohrtypen Edelstahl [448504]
+    4300106: Leerrohr mit Formteilen Leerrohr [451478]
+    4300108: Leerrohr mit Formteilen Leerrohr [546188]
+    4300110: Leerrohr mit Formteilen Leerrohr [546189]
+    4300112: Conduit Elbow - without Fittings - RNC Standard [546192]
+    4300114: Conduit Elbow - without Fittings - RNC Standard [546194]
+    4300116: Conduit Elbow - without Fittings - RNC Standard [546196]
+    4300118: Leerrohr mit Formteilen Leerrohr [546315]
+    4300120: Leerrohr mit Formteilen Leerrohr [546381]
+    4300122: Leerrohr mit Formteilen Leerrohr [546459]
+    4300124: Conduit Elbow - without Fittings - RNC Standard [546463]
+    4300126: Leerrohr mit Formteilen Leerrohr [547302]
+    4300128: Conduit Junction Box - Tee - PVC Standard [547467]
+    4300130: Leerrohr mit Formteilen Leerrohr [547468]
+    4300132: Leerrohr mit Formteilen Leerrohr [547667]
+    4300134: Leerrohr mit Formteilen Leerrohr [547948]
+    4300136: Conduit Elbow - without Fittings - RNC Standard [547955]
+    4300138: Conduit Elbow - without Fittings - RNC Standard [547958]
+    4300140: Oval Standard [548676]
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
