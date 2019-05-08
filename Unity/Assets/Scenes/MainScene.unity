@@ -609,12 +609,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &130714842 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1637996540812124, guid: c10877f7cd5764de18d46d7b777d1faa,
-    type: 3}
-  m_PrefabInstance: {fileID: 97747990}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &257452897
 GameObject:
   m_ObjectHideFlags: 0
@@ -1493,7 +1487,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7889fbf1f07939d45883e84bc2115fc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roomPrefab: {fileID: 0}
+  roomPrefab: {fileID: 5849684425587045807, guid: 1e9f3e880cb92e045887a8cfa7a7ac61,
+    type: 3}
 --- !u!114 &1030404861
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1507,7 +1502,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ui: {fileID: 1233654908}
-  camera: {fileID: 130714842}
+  markerPrefab: {fileID: 3914083957306606660, guid: 516b9313c9c865446984545f33e47ba6,
+    type: 3}
 --- !u!1 &1054692080
 GameObject:
   m_ObjectHideFlags: 0
@@ -3303,9 +3299,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2083512464}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 0, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
