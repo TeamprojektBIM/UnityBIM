@@ -16,9 +16,15 @@ public class SetRoom : MonoBehaviour
     private GlobalDataContainer container;
     private Anchor anchor;
 
+    private GameObject marker;
+
     //just for präs
     public GameObject ui;
-    public GameObject camera;
+    // public GameObject camera;
+
+    public GameObject markerPrefab;
+
+
 
     private bool roomSet = false;
 
@@ -52,7 +58,7 @@ public class SetRoom : MonoBehaviour
         Screen.sleepTimeout = SleepTimeout.NeverSleep;
 
         ProcessTouch();
-        //RaycastCenter();
+        RaycastCenter();
     }
 
     void ProcessTouch()
@@ -75,29 +81,28 @@ public class SetRoom : MonoBehaviour
 
         if (Frame.Raycast(touch.position.x, touch.position.y, raycastFilter, out hit))
         {
-            if (!roomSet)
+            if (marker == null){
+            SpawnMarker(hit.Trackable as DetectedPlane);
+            }
+           else if (!roomSet)
             {
                 ui.SetActive(false);
-                spawnRoom.spawnARoom(hit,hit.Pose.position, camera.transform.rotation);
+                spawnRoom.spawnARoom(hit,marker.transform.position, marker.transform.rotation);
                 roomSet = true;
             }
         }
     }
 
-    /*
+    
     private void SpawnMarker(DetectedPlane detectedPlane)
-    {
-        if (marker.Count <= 2)
-        {
-            var localMarker = Instantiate(markerPrefab, detectedPlane.CenterPose.position, Quaternion.identity, this.transform);
+    {       
+            marker= Instantiate(markerPrefab, detectedPlane.CenterPose.position, Quaternion.identity, this.transform);
 
             if (anchor == null)
             {
                 anchor = detectedPlane.CreateAnchor(Pose.identity);
             }
-            localMarker.transform.SetParent(anchor.transform);
-            marker.Add(localMarker);
-        }
+            marker.transform.SetParent(anchor.transform);        
     }
 
     private void RaycastCenter()
@@ -116,10 +121,17 @@ public class SetRoom : MonoBehaviour
     private void CenterMarkerOnScreen(TrackableHit hit)
     {
         Vector3 hitPoint = hit.Pose.position;
-        var activeMarker = marker[marker.Count - 1];
-        activeMarker.transform.position = new Vector3(hitPoint.x, activeMarker.transform.position.y, hitPoint.z);
+        marker.transform.position = new Vector3(hitPoint.x, marker.transform.position.y, hitPoint.z);
     }
-    */
+
+        private void RotateToCamera()
+    {
+        
+        Vector3 cameraPlanePostion = new Vector3(firstPersonCamera.transform.position.x, marker.transform.position.y, firstPersonCamera.transform.position.z);
+
+        marker.transform.LookAt(cameraPlanePostion);
+    }
+    
 
     private void FindDataContainer()
     {
