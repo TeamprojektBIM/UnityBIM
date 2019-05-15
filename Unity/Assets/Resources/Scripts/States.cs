@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public enum States{
+    MainMenu,
+    Tutorial,
+    AboutUs,
     RoomSelection,
     PlaneDetection,
-    ModelPlacement 
+    ModelPlacement
 }

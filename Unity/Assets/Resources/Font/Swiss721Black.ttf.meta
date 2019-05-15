@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 9bac82e14a824d34891e305402c76221
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Swiss 721
+  fontNames:
+  - Swiss 721
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 58be95d8a93983a41afc39fba1fbe127, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
