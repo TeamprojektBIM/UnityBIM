@@ -106,7 +106,7 @@ public class PlacementMarker : MonoBehaviour
         {
             if (marker.Count > 2)
             {
-                spanwRoom.spawnARoom(hit, marker[0].transform.position, GetRotation());
+                // spanwRoom.spawnARoom(hit, marker[0].transform.position, new Vector3());
             }
             else
             {
