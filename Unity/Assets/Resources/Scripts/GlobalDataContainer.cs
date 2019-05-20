@@ -9,6 +9,7 @@ using GoogleARCore;
 public class GlobalDataContainer : MonoBehaviour
 {
     public Camera FirstPersonCamera;
+    public GameObject arObject;
 
     [SerializeField]
     private GameObject mainMenuPanel;
@@ -49,6 +50,7 @@ public class GlobalDataContainer : MonoBehaviour
                 break;
             case States.PlaneDetection:
                 disableAllPanelsExcept(planeDetectionPanel);
+                Instantiate(arObject);
                 break;
             case States.ModelPlacement:
                 disableAllPanelsExcept(null);

@@ -73,98 +73,97 @@ public class SetRoom : MonoBehaviour
         }
         Touch touch;
 
- 
+        if (Input.touchCount != 1 ||
+            (touch = Input.GetTouch(0)).phase != TouchPhase.Began)
+        {
+            return;
+        }
 
-            if (Input.touchCount != 1 ||
-                (touch = Input.GetTouch(0)).phase != TouchPhase.Began)
+        TrackableHit hit;
+        TrackableHitFlags raycastFilter =
+            TrackableHitFlags.PlaneWithinBounds |
+            TrackableHitFlags.PlaneWithinPolygon;
+
+        if (Frame.Raycast(touch.position.x, touch.position.y, raycastFilter, out hit))
+        {
+            if (marker == null)
             {
-                return;
+                SpawnMarker(hit.Trackable as DetectedPlane);
+                ui.SetActive(false);
+            }
+            else
+            {
+                markerSet = true;
             }
 
-            TrackableHit hit;
-            TrackableHitFlags raycastFilter =
-                TrackableHitFlags.PlaneWithinBounds |
-                TrackableHitFlags.PlaneWithinPolygon;
-
-            if (Frame.Raycast(touch.position.x, touch.position.y, raycastFilter, out hit))
+            if (!roomSet && markerSet == true)
             {
-                if (marker == null)
-                {
-                    SpawnMarker(hit.Trackable as DetectedPlane);
-                }
-                else
-                {
-                    markerSet = true;
-                }
 
-                if (!roomSet && markerSet == true)
-                {
-
-                    if(touch.position.x > Screen.width/2 && touch.position.y > Screen.height/4){
-                        rotateMarker(2);
-                    }
-                    else if(touch.position.x < Screen.width/2 && touch.position.y > Screen.height/4){
-                        rotateMarker(-2);
-                    } else {
-                        ui.SetActive(false);
-                        spawnRoom.spawnARoom(hit, marker.transform.position, marker.transform.rotation);
-                        roomSet = true;
-                    }
+                if(touch.position.x > Screen.width/2 && touch.position.y > Screen.height/4){
+                    rotateMarker(2);
+                }
+                else if(touch.position.x < Screen.width/2 && touch.position.y > Screen.height/4){
+                    rotateMarker(-2);
+                } else {
+                    spawnRoom.spawnARoom(hit, marker.transform.position, marker.transform.rotation);
+                    roomSet = true;
+                    marker.SetActive(false);
+                }
 
                     
-                }
             }
         }
-
-
-        private void SpawnMarker(DetectedPlane detectedPlane)
-        {
-            marker = Instantiate(markerPrefab, detectedPlane.CenterPose.position, Quaternion.identity, this.transform);
-
-            if (anchor == null)
-            {
-                anchor = detectedPlane.CreateAnchor(Pose.identity);
-            }
-            marker.transform.SetParent(anchor.transform);
-        }
-
-        private void RaycastCenter()
-        {
-            TrackableHit hit;
-            TrackableHitFlags raycastFilter = TrackableHitFlags.PlaneWithinBounds;
-
-            // If it hits an ARCore plane, move the pointer to that location.
-            if (Frame.Raycast(Screen.width / 2, Screen.height / 2, raycastFilter, out hit))
-            {
-                CenterMarkerOnScreen(hit);
-                RotateToCamera();
-            }
-        }
-
-        private void CenterMarkerOnScreen(TrackableHit hit)
-        {
-            Vector3 hitPoint = hit.Pose.position;
-            marker.transform.position = new Vector3(hitPoint.x, marker.transform.position.y, hitPoint.z);
-        }
-
-        private void RotateToCamera()
-        {
-
-            Vector3 cameraPlanePostion = new Vector3(firstPersonCamera.transform.position.x, marker.transform.position.y, firstPersonCamera.transform.position.z);
-
-            marker.transform.LookAt(cameraPlanePostion);
-        }
-
-        private void rotateMarker(float angle)
-        {
-            marker.transform.Rotate(0, angle, 0);
-        }
-
-
-        private void FindDataContainer()
-        {
-            GameObject containerObject = GameObject.Find(Constants.GlobalDataContainer);
-            container = containerObject.GetComponent<GlobalDataContainer>();
-        }
-
     }
+
+
+    private void SpawnMarker(DetectedPlane detectedPlane)
+    {
+        marker = Instantiate(markerPrefab, detectedPlane.CenterPose.position, Quaternion.identity, this.transform);
+
+        if (anchor == null)
+        {
+            anchor = detectedPlane.CreateAnchor(Pose.identity);
+        }
+        marker.transform.SetParent(anchor.transform);
+    }
+
+    private void RaycastCenter()
+    {
+        TrackableHit hit;
+        TrackableHitFlags raycastFilter = TrackableHitFlags.PlaneWithinBounds;
+
+        // If it hits an ARCore plane, move the pointer to that location.
+        if (Frame.Raycast(Screen.width / 2, Screen.height / 2, raycastFilter, out hit))
+        {
+            CenterMarkerOnScreen(hit);
+            RotateToCamera();
+        }
+    }
+
+    private void CenterMarkerOnScreen(TrackableHit hit)
+    {
+        Vector3 hitPoint = hit.Pose.position;
+        marker.transform.position = new Vector3(hitPoint.x, marker.transform.position.y, hitPoint.z);
+    }
+
+    private void RotateToCamera()
+    {
+
+        Vector3 cameraPlanePostion = new Vector3(firstPersonCamera.transform.position.x, marker.transform.position.y, firstPersonCamera.transform.position.z);
+
+        marker.transform.LookAt(cameraPlanePostion);
+    }
+
+    private void rotateMarker(float angle)
+    {
+        marker.transform.Rotate(0, angle, 0);
+    }
+
+
+    private void FindDataContainer()
+    {
+        GameObject containerObject = GameObject.Find(Constants.GlobalDataContainer);
+        container = containerObject.GetComponent<GlobalDataContainer>();
+    }
+
+}
