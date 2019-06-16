@@ -1,4 +1,6 @@
 ﻿using GoogleARCore;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -24,10 +26,16 @@ public class SetRoom : MonoBehaviour
 
     public GameObject markerPrefab;
 
-
-
     private bool roomSet = false;
     private bool markerSet = false;
+
+    private bool timeup = true;
+
+    private IEnumerator Timer()
+    {
+        yield return new WaitForSecondsRealtime(2);
+        timeup = true;
+    }
 
     void Start()
     {
@@ -87,27 +95,33 @@ public class SetRoom : MonoBehaviour
         if (Frame.Raycast(touch.position.x, touch.position.y, raycastFilter, out hit))
         {
             if (marker == null)
-            {
+        {
                 SpawnMarker(hit.Trackable as DetectedPlane);
-                ui.SetActive(false);
+                Constants.dataContainer.SetCurrentState(States.MarkerPlacement);
             }
-            else
+            else if(!markerSet)
             {
-                markerSet = true;
+                if (touch.position.y < Screen.height / 10)
+                {
+                    markerSet = true;
+                    Constants.dataContainer.SetCurrentState(States.MarkerRotation);
+                    timeup = false;
+                    StartCoroutine(Timer());
+                }
             }
-
-            if (!roomSet && markerSet == true)
+            else if (!roomSet && markerSet && timeup)
             {
 
-                if(touch.position.x > Screen.width/2 && touch.position.y > Screen.height/4){
+                if(touch.position.x > Screen.width/2 && touch.position.y > Screen.height/10){
                     rotateMarker(2);
                 }
-                else if(touch.position.x < Screen.width/2 && touch.position.y > Screen.height/4){
+                else if(touch.position.x < Screen.width/2 && touch.position.y > Screen.height/10){
                     rotateMarker(-2);
                 } else {
                     spawnRoom.spawnARoom(hit, marker.transform.position, marker.transform.rotation);
                     roomSet = true;
                     marker.SetActive(false);
+                    Constants.dataContainer.SetCurrentState(States.ModelPlacement);
                 }
 
                     

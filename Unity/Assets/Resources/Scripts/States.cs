@@ -8,5 +8,8 @@ public enum States{
     AboutUs,
     RoomSelection,
     PlaneDetection,
-    ModelPlacement
+    PlaneConfirmation,
+    MarkerPlacement,
+    MarkerRotation,
+    ModelPlacement,
 }

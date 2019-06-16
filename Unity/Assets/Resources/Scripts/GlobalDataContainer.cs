@@ -12,15 +12,7 @@ public class GlobalDataContainer : MonoBehaviour
     public GameObject arObject;
 
     [SerializeField]
-    private GameObject mainMenuPanel;
-    [SerializeField]
-    private GameObject roomSelectionPanel;
-    [SerializeField]
-    private GameObject tutorialPanel;
-    [SerializeField]
-    private GameObject aboutUsPanel;
-    [SerializeField]
-    private GameObject planeDetectionPanel;
+    private GameObject[] menuPanels;
 
     private States currentState = States.MainMenu;
     private Rooms currentRoom = Rooms.F_202;
@@ -28,29 +20,35 @@ public class GlobalDataContainer : MonoBehaviour
     private bool isInitialized = false;
     public void SetCurrentState(States newState)
     {
-        if(!isInitialized){
-            Initialize();
-        }
         //Logger.log("cs: " + currentState + ", ns: " + newState);
         currentState = newState;
         //Logger.log("Changing current state to: " + currentState.ToString());
         switch (newState)
         {
             case States.MainMenu:
-                disableAllPanelsExcept(mainMenuPanel);
+                disableAllPanelsExcept(menuPanels[0]);
                 break;
             case States.AboutUs:
-                disableAllPanelsExcept(aboutUsPanel);
+                disableAllPanelsExcept(menuPanels[1]);
                 break;
             case States.Tutorial:
-                disableAllPanelsExcept(tutorialPanel);
+                disableAllPanelsExcept(menuPanels[2]);
                 break;
             case States.RoomSelection:
-                disableAllPanelsExcept(roomSelectionPanel);
+                disableAllPanelsExcept(menuPanels[3]);
                 break;
             case States.PlaneDetection:
-                disableAllPanelsExcept(planeDetectionPanel);
+                disableAllPanelsExcept(menuPanels[4]);
                 Instantiate(arObject);
+                break;
+            case States.PlaneConfirmation:
+                disableAllPanelsExcept(menuPanels[5]);
+                break;
+            case States.MarkerPlacement:
+                disableAllPanelsExcept(menuPanels[6]);
+                break;
+            case States.MarkerRotation:
+                disableAllPanelsExcept(menuPanels[7]);
                 break;
             case States.ModelPlacement:
                 disableAllPanelsExcept(null);
@@ -58,36 +56,19 @@ public class GlobalDataContainer : MonoBehaviour
         }
     }
 
-    public void SetCurrentRoom(Rooms room){
-        currentRoom = room;
-    }
-
-    private List<GameObject> panels = new List<GameObject>();
-    
-    private void Initialize()
-    {
-        panels.Add(mainMenuPanel);
-        panels.Add(roomSelectionPanel);
-        panels.Add(tutorialPanel);
-        panels.Add(aboutUsPanel);
-        panels.Add(planeDetectionPanel);
-
-        isInitialized = true;
-    }
-
     private void disableAllPanelsExcept(GameObject panel)
     {
         //Logger.log("List: " + panels.Count);
-        foreach (GameObject p in panels)
+        foreach (GameObject p in menuPanels)
         {
-            if (panel != null && !panel.Equals(p) && p != null)
-            {
-                p.SetActive(false);
-            }
+            p.SetActive(false);
         }
+
         panel.SetActive(true);
     }
 
-
-
+    public void SetCurrentRoom(Rooms room)
+    {
+        currentRoom = room;
+    }
 }
