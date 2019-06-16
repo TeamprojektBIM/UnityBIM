@@ -1,0 +1,1208 @@
+fileFormatVersion: 2
+guid: 499734ff88d37544c868c2a611e72b17
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: '3D-Ansicht: {3D}'
+    100002: Basiswand GK 10.0 [454528]
+    100004: Basiswand GK 10.0 [454732]
+    100006: Basiswand GK 10.0 [454924]
+    100008: Basiswand GK 10.0 [455040]
+    100010: Basiswand GK 10.0 [455478]
+    100012: Basiswand GK 10.0 [457927]
+    100014: Basiswand GK 10.0 [458210]
+    100016: Basiswand GK 10.0 [458407]
+    100018: Basiswand GK 10.0 [458572]
+    100020: Basiswand GK 10.0 [458684]
+    100022: Basiswand GK 20.0 2 [449785]
+    100024: Basiswand GK 20.0 2 [465365]
+    100026: Basiswand GK 20.0 2 [471813]
+    100028: Basiswand GK 20.0 2 [482211]
+    100030: Basiswand GK 20.0 2 [482302]
+    100032: Basiswand GK 25.0 [480496]
+    100034: Basiswand STB 21.0 - Sichtbeton 1 [414948]
+    100036: Basiswand STB 25.0 - Sichtbeton 3 [484654]
+    100038: Basiswand STB 25.0 - Sichtbeton 3 [484740]
+    100040: Basiswand STB 25.0 - Sichtbeton 3 [484828]
+    100042: Basiswand STB 25.0 [451737]
+    100044: Basiswand STB 25.0 [462739]
+    100046: Basiswand STB 25.0 [483965]
+    100048: Basiswand STB 30.0 - Sichtbeton 2 [397476]
+    100050: Basiswand STB 30.0 - Sichtbeton 2 [399356]
+    100052: Basiswand STB 30.0 - Sichtbeton 2 [401273]
+    100054: Basiswand STB 30.0 - Sichtbeton 2 [403998]
+    100056: Basiswand STB 30.0 - Sichtbeton 2 [453275]
+    100058: Basiswand STB 30.0 - Sichtbeton 2 [453457]
+    100060: Basiswand STB 30.0 - Sichtbeton 2 [453875]
+    100062: Basiswand STB 30.0 - Sichtbeton 2 [459931]
+    100064: Basiswand STB 30.0 - Sichtbeton 2 [460080]
+    100066: Basiswand STB 30.0 - Sichtbeton 2 [469347]
+    100068: Basiswand STB 30.0 - Sichtbeton 2 [471247]
+    100070: Basiswand STB 30.0 - Sichtbeton 2 [473418]
+    100072: Basiswand STB 30.0 - Sichtbeton 2 [530152]
+    100074: Basiswand STB 30.0 - Sichtbeton holz [532332]
+    100076: Basiswand STB 30.8- Sichtbeton 3 [411147]
+    100078: Basiswand STB 50.0 - Sichtbeton 3 [434483]
+    100080: Basiswand STB 60.0 - Sichtbeton 3 [403586]
+    100082: Basiswand STB 60.0 - Sichtbeton 3 [435913]
+    100084: Bogen HT Standard [640882]
+    100086: Bogen HT Standard [648438]
+    100088: Conduit Elbow - Plain End - PVC Standard [601951]
+    100090: Conduit Elbow - Plain End - PVC Standard [603579]
+    100092: Conduit Elbow - Plain End - PVC Standard [627150]
+    100094: Conduit Elbow - Plain End - PVC Standard [627161]
+    100096: Conduit Elbow - Plain End - PVC Standard [631223]
+    100098: Conduit Elbow - Plain End - PVC Standard [641616]
+    100100: Conduit Elbow - Plain End - PVC Standard [642161]
+    100102: Conduit Elbow - Plain End - PVC Standard [651049]
+    100104: Conduit Junction Box - Cross - PVC Standard [602144]
+    100106: Conduit Junction Box - Cross - PVC Standard [603956]
+    100108: Conduit Junction Box - Cross - PVC Standard [604169]
+    100110: Conduit Junction Box - Cross - PVC Standard [604216]
+    100112: Conduit Junction Box - Cross - PVC Standard [641229]
+    100114: Conduit Junction Box - Cross - PVC Standard [647778]
+    100116: "Drehfl\xFCgel 1-flg - Blockzarge 1.26 x 2.26 [534149]"
+    100118: "Drehfl\xFCgel 1-flg - Blockzarge 1.26 x 2.26 [534670]"
+    100120: "Drehfl\xFCgel 1-flg - Stahlzarge 88.5 x 2.26 [400111]"
+    100122: "Drehfl\xFCgel 1-flg - Stahlzarge 88.5 x 2.26 [401729]"
+    100124: "Drehfl\xFCgel 1-flg - Stahlzarge 88.5 x 2.26 [481872]"
+    100126: "Drehfl\xFCgel 1-flg - Stahlzarge 88.5 x 2.26 [490344]"
+    100128: "Drehfl\xFCgel 1-flg - Stahlzarge 88.5 x 2.26 [490866]"
+    100130: "Drehfl\xFCgel 1-flg - Stahlzarge 88.5 x 2.26 [491462]"
+    100132: "Drehfl\xFCgel 1-flg - Stahlzarge 88.5 x 2.26 [492216]"
+    100134: Eckventil - Gewinde Standard [637886]
+    100136: Eckventil - Gewinde Standard [637899]
+    100138: //RootNode
+    100140: Fenster - Festverglasung Feste Verglasung 1.0 x2 2 [476570]
+    100142: Fenster - Festverglasung Feste Verglasung 1.25x2 [444214]
+    100144: Fenster - Festverglasung Feste Verglasung 1.25x2 [476023]
+    100146: Fenster - Festverglasung Feste Verglasung 4.58 x 0.96 2 [474263]
+    100148: Fenster - Festverglasung Feste Verglasung 4.58 x 1.03 [465822]
+    100150: Fenster - Festverglasung Feste Verglasung 4.58 x 1.05 2 [473570]
+    100152: Fenster - Festverglasung Feste Verglasung 4.58 x 1.31 3 2 2 [464349]
+    100154: Fenster - Festverglasung Feste Verglasung 4.58 x 1.31 3 2 [473784]
+    100156: Fenster - Festverglasung Feste Verglasung 4.58 x 1.37 [460791]
+    100158: Fenster - Festverglasung Feste Verglasung 4.58 x 1.37 [473965]
+    100160: Fenster - Festverglasung Feste Verglasung 4.58 x 1.40 2 [466249]
+    100162: Fenster - Festverglasung Feste Verglasung 4.58 x 1.45 3 [474816]
+    100164: Fenster - Festverglasung Feste Verglasung 4.58 x 1.45 3 [474949]
+    100166: Fenster - Festverglasung Feste Verglasung 4.58 x 1.45 3 [475058]
+    100168: Fenster - Festverglasung Feste Verglasung 4.58 x 1.61 2 [463459]
+    100170: Fenster - Festverglasung Feste Verglasung 4.58 x 1.63 [446162]
+    100172: Fenster - Festverglasung Feste Verglasung 4.58 x 1.77 3 2 2 2 [468259]
+    100174: Fenster - Festverglasung Feste Verglasung 4.58 x 1.79 3 [464145]
+    100176: Fenster - Festverglasung Feste Verglasung 4.58 x 1.8 [439534]
+    100178: Fenster - Festverglasung Feste Verglasung 4.58 x 1.8 [440644]
+    100180: Fenster - Festverglasung Feste Verglasung 4.58 x 1.8 [442832]
+    100182: Fenster - Festverglasung Feste Verglasung 4.58 x 1.9 2 [466731]
+    100184: Fenster - Festverglasung Feste Verglasung 4.58 x 1.9 2 [466967]
+    100186: Fenster - Festverglasung Feste Verglasung 4.58 x 1.9 2 [467165]
+    100188: Fenster - Festverglasung Feste Verglasung 4.58 x 1.9 2 [467321]
+    100190: Fenster - Festverglasung Feste Verglasung 4.58 x 1.9 2 [467433]
+    100192: Fenster - Festverglasung Feste Verglasung 4.58 x 1.9 2 [467542]
+    100194: Fenster - Festverglasung Feste Verglasung 4.58 x 1.9 2 [467631]
+    100196: Fenster - Festverglasung Feste Verglasung 4.58 x 1.9 2 [468539]
+    100198: "Fenstert\xFCr 1-flg 1.80 x  1 [476569]"
+    100200: "Fenstert\xFCr 1-flg 1.80 x  3,1 [443159]"
+    100202: "Fenstert\xFCr 1-flg 1.80 x  3,1 [476022]"
+    100204: Fertigbetontreppe Treppe [486260]
+    100206: Fertigbetontreppe Treppe [486260]_[486469]
+    100208: "Geschossdecke Flie\xDFen [520619]"
+    100210: Geschossdecke Parkett [509375]
+    100212: Geschossdecke PVC [512761]
+    100214: Geschossdecke PVC [518013]
+    100216: Geschossdecke PVC [521739]
+    100218: Geschossdecke PVC [522483]
+    100220: Geschossdecke PVC [524293]
+    100222: Geschossdecke STB 30 [508529]
+    100224: Handwaschbecken Standard [571508]
+    100226: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [564752]"
+    100228: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [564908]"
+    100230: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [568870]"
+    100232: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [587966]"
+    100234: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [588093]"
+    100236: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [588314]"
+    100238: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [588438]"
+    100240: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [588554]"
+    100242: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [588942]"
+    100244: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [589131]"
+    100246: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [589334]"
+    100248: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [589417]"
+    100250: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [589476]"
+    100252: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [589553]"
+    100254: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [589598]"
+    100256: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [589796]"
+    100258: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [589919]"
+    100260: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [590216]"
+    100262: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [590289]"
+    100264: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [590334]"
+    100266: Leerrohr mit Formteilen Leerrohr [596679]
+    100268: Leerrohr ohne Formteile Leerrohr [595213]
+    100270: Leerrohr ohne Formteile Leerrohr [596695]
+    100272: Leerrohr ohne Formteile Leerrohr [601688]
+    100274: Leerrohr ohne Formteile Leerrohr [601711]
+    100276: Leerrohr ohne Formteile Leerrohr [601932]
+    100278: Leerrohr ohne Formteile Leerrohr [602095]
+    100280: Leerrohr ohne Formteile Leerrohr [602106]
+    100282: Leerrohr ohne Formteile Leerrohr [603531]
+    100284: Leerrohr ohne Formteile Leerrohr [603562]
+    100286: Leerrohr ohne Formteile Leerrohr [627123]
+    100288: Leerrohr ohne Formteile Leerrohr [627143]
+    100290: Leerrohr ohne Formteile Leerrohr [627163]
+    100292: Leerrohr ohne Formteile Leerrohr [642159]
+    100294: "Massivtreppenlauf Holzauftritt 30 mm, Tritt\xFCberstand 30 mm [486468]"
+    100296: "Massivtreppenlauf Holzauftritt 30 mm, Tritt\xFCberstand 30 mm [486468]_[486469]"
+    100298: Pfosten rechteckig 6 x 12 [493766]
+    100300: Pfosten rechteckig 6 x 12 [493767]
+    100302: Pfosten rechteckig 6 x 12 [493769]
+    100304: Pfosten rechteckig 6 x 12 [493770]
+    100306: Pfosten rechteckig 6 x 12 [493771]
+    100308: Pfosten rechteckig 6 x 12 [496123]
+    100310: Pfosten rechteckig 6 x 12 [496125]
+    100312: Pfosten rechteckig 6 x 12 [496127]
+    100314: Pfosten rechteckig 6 x 12 [496129]
+    100316: Pfosten rechteckig 6 x 12 [496883]
+    100318: Pfosten rechteckig 6 x 12 [496884]
+    100320: Pfosten rechteckig 6 x 12 [496885]
+    100322: Pfosten rechteckig 6 x 12 [496886]
+    100324: Pfosten rechteckig 6 x 12 [496887]
+    100326: Pfosten rechteckig 6 x 12 [496894]
+    100328: Pfosten rechteckig 6 x 12 [496896]
+    100330: Pfosten rechteckig 6 x 12 [496898]
+    100332: Pfosten rechteckig 6 x 12 [496900]
+    100334: Pfosten rechteckig 6 x 12 [499958]
+    100336: Pfosten rechteckig 6 x 12 [499959]
+    100338: Pfosten rechteckig 6 x 12 [499960]
+    100340: Pfosten rechteckig 6 x 12 [500285]
+    100342: Pfosten rechteckig 6 x 12 [500287]
+    100344: Pfosten rechteckig 6 x 12 [500288]
+    100346: Pfosten rechteckig 6 x 12 [500702]
+    100348: Pfosten rechteckig 6 x 12 [500705]
+    100350: Pfosten rechteckig 6 x 12 [503372]
+    100352: Pfosten rechteckig 6 x 12 [503373]
+    100354: Pfosten rechteckig 6 x 12 [503374]
+    100356: Pfosten rechteckig 6 x 12 [503375]
+    100358: Pfosten rechteckig 6 x 12 [503376]
+    100360: Pfosten rechteckig 6 x 12 [503380]
+    100362: Pfosten rechteckig 6 x 12 [503381]
+    100364: Pfosten rechteckig 6 x 12 [503382]
+    100366: Pfosten rechteckig 6 x 12 [503383]
+    100368: Pfosten rechteckig 6 x 12 [503388]
+    100370: Pfosten rechteckig 6 x 12 [503389]
+    100372: Pfosten rechteckig 6 x 12 [503390]
+    100374: Pfosten rechteckig 6 x 12 [503391]
+    100376: Pfosten rechteckig 6 x 12 [503392]
+    100378: Pfosten rechteckig 6 x 12 [503396]
+    100380: Pfosten rechteckig 6 x 12 [503397]
+    100382: Pfosten rechteckig 6 x 12 [503398]
+    100384: Pfosten rechteckig 6 x 12 [503399]
+    100386: Pfosten rechteckig 6 x 12 [503516]
+    100388: Pfosten rechteckig 6 x 12 [503517]
+    100390: Pfosten rechteckig 6 x 12 [503518]
+    100392: Pfosten rechteckig 6 x 12 [503521]
+    100394: Pfosten rechteckig 6 x 12 [503522]
+    100396: Pfosten rechteckig 6 x 12 [503523]
+    100398: Pfosten rechteckig 6 x 12 [503526]
+    100400: Pfosten rechteckig 6 x 12 [503527]
+    100402: Rohrtypen Vorgabe [605415]
+    100404: Rohrtypen Vorgabe [609607]
+    100406: Rohrtypen Vorgabe [615510]
+    100408: Rohrtypen Vorgabe [638030]
+    100410: Rohrtypen Vorgabe [638073]
+    100412: Schalter - Dimmer einpolig Standard [561337]
+    100414: Schalter 1-polig [567369]
+    100416: "STB St\xFCtze - rechteckig STB 30 x 30 [417561]"
+    100418: "STB St\xFCtze - rechteckig STB 30 x 30 [421595]"
+    100420: Steckdose 3-fach Aufputz Standard [635900]
+    100422: Steckdose 3-fach Aufputz Standard [644085]
+    100424: Steckdose 3-fach Aufputz Standard [644307]
+    100426: Systemelement Verglasung [493758]
+    100428: Systemelement Verglasung [496109]
+    100430: Systemelement Verglasung [496880]
+    100432: Systemelement Verglasung [496889]
+    100434: Systemelement Verglasung [499954]
+    100436: Systemelement Verglasung [500274]
+    100438: Systemelement Verglasung [503369]
+    100440: Systemelement Verglasung [503378]
+    100442: Systemelement Verglasung [503385]
+    100444: Systemelement Verglasung [503394]
+    100446: Systemelement Verglasung [503515]
+    100448: Systemelement Verglasung [503520]
+    100450: Typ des oberen Holms Holz - Rund - 40 mm m. Versatz [487076]
+    100452: Typ des oberen Holms Holz - Rund - 40 mm m. Versatz [487087]
+    100454: "T\xFCrelement 2-flg - Schiebefl\xFCgel Standard [502101]"
+    100456: "T\xFCrelement 2-flg - Schiebefl\xFCgel Standard [502106]"
+    100458: "T\xFCrelement 2-flg - Schiebefl\xFCgel Standard [503401]"
+    100460: "T\xFCrelement 2-flg - Schiebefl\xFCgel Standard [503403]"
+    100462: Verbindung - allgemein Standard [615348]
+    100464: Verteilerdose rund Standard [590161]
+    100466: Verteilerdose rund Standard [627999]
+    100468: Verteilerdose rund Standard [628093]
+    100470: Verteilerdose rund Standard [628546]
+    100472: Verteilerdose rund Standard [644523]
+    100474: Verteilerdose rund Standard [647010]
+    100476: Verteilerdose rund Standard [647160]
+    100478: Verteilerdose rund Standard [647355]
+    100480: Verteilerdose rund Standard [647432]
+    100482: Verteilerdose rund Standard [647566]
+    400000: '3D-Ansicht: {3D}'
+    400002: Basiswand GK 10.0 [454528]
+    400004: Basiswand GK 10.0 [454732]
+    400006: Basiswand GK 10.0 [454924]
+    400008: Basiswand GK 10.0 [455040]
+    400010: Basiswand GK 10.0 [455478]
+    400012: Basiswand GK 10.0 [457927]
+    400014: Basiswand GK 10.0 [458210]
+    400016: Basiswand GK 10.0 [458407]
+    400018: Basiswand GK 10.0 [458572]
+    400020: Basiswand GK 10.0 [458684]
+    400022: Basiswand GK 20.0 2 [449785]
+    400024: Basiswand GK 20.0 2 [465365]
+    400026: Basiswand GK 20.0 2 [471813]
+    400028: Basiswand GK 20.0 2 [482211]
+    400030: Basiswand GK 20.0 2 [482302]
+    400032: Basiswand GK 25.0 [480496]
+    400034: Basiswand STB 21.0 - Sichtbeton 1 [414948]
+    400036: Basiswand STB 25.0 - Sichtbeton 3 [484654]
+    400038: Basiswand STB 25.0 - Sichtbeton 3 [484740]
+    400040: Basiswand STB 25.0 - Sichtbeton 3 [484828]
+    400042: Basiswand STB 25.0 [451737]
+    400044: Basiswand STB 25.0 [462739]
+    400046: Basiswand STB 25.0 [483965]
+    400048: Basiswand STB 30.0 - Sichtbeton 2 [397476]
+    400050: Basiswand STB 30.0 - Sichtbeton 2 [399356]
+    400052: Basiswand STB 30.0 - Sichtbeton 2 [401273]
+    400054: Basiswand STB 30.0 - Sichtbeton 2 [403998]
+    400056: Basiswand STB 30.0 - Sichtbeton 2 [453275]
+    400058: Basiswand STB 30.0 - Sichtbeton 2 [453457]
+    400060: Basiswand STB 30.0 - Sichtbeton 2 [453875]
+    400062: Basiswand STB 30.0 - Sichtbeton 2 [459931]
+    400064: Basiswand STB 30.0 - Sichtbeton 2 [460080]
+    400066: Basiswand STB 30.0 - Sichtbeton 2 [469347]
+    400068: Basiswand STB 30.0 - Sichtbeton 2 [471247]
+    400070: Basiswand STB 30.0 - Sichtbeton 2 [473418]
+    400072: Basiswand STB 30.0 - Sichtbeton 2 [530152]
+    400074: Basiswand STB 30.0 - Sichtbeton holz [532332]
+    400076: Basiswand STB 30.8- Sichtbeton 3 [411147]
+    400078: Basiswand STB 50.0 - Sichtbeton 3 [434483]
+    400080: Basiswand STB 60.0 - Sichtbeton 3 [403586]
+    400082: Basiswand STB 60.0 - Sichtbeton 3 [435913]
+    400084: Bogen HT Standard [640882]
+    400086: Bogen HT Standard [648438]
+    400088: Conduit Elbow - Plain End - PVC Standard [601951]
+    400090: Conduit Elbow - Plain End - PVC Standard [603579]
+    400092: Conduit Elbow - Plain End - PVC Standard [627150]
+    400094: Conduit Elbow - Plain End - PVC Standard [627161]
+    400096: Conduit Elbow - Plain End - PVC Standard [631223]
+    400098: Conduit Elbow - Plain End - PVC Standard [641616]
+    400100: Conduit Elbow - Plain End - PVC Standard [642161]
+    400102: Conduit Elbow - Plain End - PVC Standard [651049]
+    400104: Conduit Junction Box - Cross - PVC Standard [602144]
+    400106: Conduit Junction Box - Cross - PVC Standard [603956]
+    400108: Conduit Junction Box - Cross - PVC Standard [604169]
+    400110: Conduit Junction Box - Cross - PVC Standard [604216]
+    400112: Conduit Junction Box - Cross - PVC Standard [641229]
+    400114: Conduit Junction Box - Cross - PVC Standard [647778]
+    400116: "Drehfl\xFCgel 1-flg - Blockzarge 1.26 x 2.26 [534149]"
+    400118: "Drehfl\xFCgel 1-flg - Blockzarge 1.26 x 2.26 [534670]"
+    400120: "Drehfl\xFCgel 1-flg - Stahlzarge 88.5 x 2.26 [400111]"
+    400122: "Drehfl\xFCgel 1-flg - Stahlzarge 88.5 x 2.26 [401729]"
+    400124: "Drehfl\xFCgel 1-flg - Stahlzarge 88.5 x 2.26 [481872]"
+    400126: "Drehfl\xFCgel 1-flg - Stahlzarge 88.5 x 2.26 [490344]"
+    400128: "Drehfl\xFCgel 1-flg - Stahlzarge 88.5 x 2.26 [490866]"
+    400130: "Drehfl\xFCgel 1-flg - Stahlzarge 88.5 x 2.26 [491462]"
+    400132: "Drehfl\xFCgel 1-flg - Stahlzarge 88.5 x 2.26 [492216]"
+    400134: Eckventil - Gewinde Standard [637886]
+    400136: Eckventil - Gewinde Standard [637899]
+    400138: //RootNode
+    400140: Fenster - Festverglasung Feste Verglasung 1.0 x2 2 [476570]
+    400142: Fenster - Festverglasung Feste Verglasung 1.25x2 [444214]
+    400144: Fenster - Festverglasung Feste Verglasung 1.25x2 [476023]
+    400146: Fenster - Festverglasung Feste Verglasung 4.58 x 0.96 2 [474263]
+    400148: Fenster - Festverglasung Feste Verglasung 4.58 x 1.03 [465822]
+    400150: Fenster - Festverglasung Feste Verglasung 4.58 x 1.05 2 [473570]
+    400152: Fenster - Festverglasung Feste Verglasung 4.58 x 1.31 3 2 2 [464349]
+    400154: Fenster - Festverglasung Feste Verglasung 4.58 x 1.31 3 2 [473784]
+    400156: Fenster - Festverglasung Feste Verglasung 4.58 x 1.37 [460791]
+    400158: Fenster - Festverglasung Feste Verglasung 4.58 x 1.37 [473965]
+    400160: Fenster - Festverglasung Feste Verglasung 4.58 x 1.40 2 [466249]
+    400162: Fenster - Festverglasung Feste Verglasung 4.58 x 1.45 3 [474816]
+    400164: Fenster - Festverglasung Feste Verglasung 4.58 x 1.45 3 [474949]
+    400166: Fenster - Festverglasung Feste Verglasung 4.58 x 1.45 3 [475058]
+    400168: Fenster - Festverglasung Feste Verglasung 4.58 x 1.61 2 [463459]
+    400170: Fenster - Festverglasung Feste Verglasung 4.58 x 1.63 [446162]
+    400172: Fenster - Festverglasung Feste Verglasung 4.58 x 1.77 3 2 2 2 [468259]
+    400174: Fenster - Festverglasung Feste Verglasung 4.58 x 1.79 3 [464145]
+    400176: Fenster - Festverglasung Feste Verglasung 4.58 x 1.8 [439534]
+    400178: Fenster - Festverglasung Feste Verglasung 4.58 x 1.8 [440644]
+    400180: Fenster - Festverglasung Feste Verglasung 4.58 x 1.8 [442832]
+    400182: Fenster - Festverglasung Feste Verglasung 4.58 x 1.9 2 [466731]
+    400184: Fenster - Festverglasung Feste Verglasung 4.58 x 1.9 2 [466967]
+    400186: Fenster - Festverglasung Feste Verglasung 4.58 x 1.9 2 [467165]
+    400188: Fenster - Festverglasung Feste Verglasung 4.58 x 1.9 2 [467321]
+    400190: Fenster - Festverglasung Feste Verglasung 4.58 x 1.9 2 [467433]
+    400192: Fenster - Festverglasung Feste Verglasung 4.58 x 1.9 2 [467542]
+    400194: Fenster - Festverglasung Feste Verglasung 4.58 x 1.9 2 [467631]
+    400196: Fenster - Festverglasung Feste Verglasung 4.58 x 1.9 2 [468539]
+    400198: "Fenstert\xFCr 1-flg 1.80 x  1 [476569]"
+    400200: "Fenstert\xFCr 1-flg 1.80 x  3,1 [443159]"
+    400202: "Fenstert\xFCr 1-flg 1.80 x  3,1 [476022]"
+    400204: Fertigbetontreppe Treppe [486260]
+    400206: Fertigbetontreppe Treppe [486260]_[486469]
+    400208: "Geschossdecke Flie\xDFen [520619]"
+    400210: Geschossdecke Parkett [509375]
+    400212: Geschossdecke PVC [512761]
+    400214: Geschossdecke PVC [518013]
+    400216: Geschossdecke PVC [521739]
+    400218: Geschossdecke PVC [522483]
+    400220: Geschossdecke PVC [524293]
+    400222: Geschossdecke STB 30 [508529]
+    400224: Handwaschbecken Standard [571508]
+    400226: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [564752]"
+    400228: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [564908]"
+    400230: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [568870]"
+    400232: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [587966]"
+    400234: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [588093]"
+    400236: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [588314]"
+    400238: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [588438]"
+    400240: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [588554]"
+    400242: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [588942]"
+    400244: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [589131]"
+    400246: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [589334]"
+    400248: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [589417]"
+    400250: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [589476]"
+    400252: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [589553]"
+    400254: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [589598]"
+    400256: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [589796]"
+    400258: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [589919]"
+    400260: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [590216]"
+    400262: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [590289]"
+    400264: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [590334]"
+    400266: Leerrohr mit Formteilen Leerrohr [596679]
+    400268: Leerrohr ohne Formteile Leerrohr [595213]
+    400270: Leerrohr ohne Formteile Leerrohr [596695]
+    400272: Leerrohr ohne Formteile Leerrohr [601688]
+    400274: Leerrohr ohne Formteile Leerrohr [601711]
+    400276: Leerrohr ohne Formteile Leerrohr [601932]
+    400278: Leerrohr ohne Formteile Leerrohr [602095]
+    400280: Leerrohr ohne Formteile Leerrohr [602106]
+    400282: Leerrohr ohne Formteile Leerrohr [603531]
+    400284: Leerrohr ohne Formteile Leerrohr [603562]
+    400286: Leerrohr ohne Formteile Leerrohr [627123]
+    400288: Leerrohr ohne Formteile Leerrohr [627143]
+    400290: Leerrohr ohne Formteile Leerrohr [627163]
+    400292: Leerrohr ohne Formteile Leerrohr [642159]
+    400294: "Massivtreppenlauf Holzauftritt 30 mm, Tritt\xFCberstand 30 mm [486468]"
+    400296: "Massivtreppenlauf Holzauftritt 30 mm, Tritt\xFCberstand 30 mm [486468]_[486469]"
+    400298: Pfosten rechteckig 6 x 12 [493766]
+    400300: Pfosten rechteckig 6 x 12 [493767]
+    400302: Pfosten rechteckig 6 x 12 [493769]
+    400304: Pfosten rechteckig 6 x 12 [493770]
+    400306: Pfosten rechteckig 6 x 12 [493771]
+    400308: Pfosten rechteckig 6 x 12 [496123]
+    400310: Pfosten rechteckig 6 x 12 [496125]
+    400312: Pfosten rechteckig 6 x 12 [496127]
+    400314: Pfosten rechteckig 6 x 12 [496129]
+    400316: Pfosten rechteckig 6 x 12 [496883]
+    400318: Pfosten rechteckig 6 x 12 [496884]
+    400320: Pfosten rechteckig 6 x 12 [496885]
+    400322: Pfosten rechteckig 6 x 12 [496886]
+    400324: Pfosten rechteckig 6 x 12 [496887]
+    400326: Pfosten rechteckig 6 x 12 [496894]
+    400328: Pfosten rechteckig 6 x 12 [496896]
+    400330: Pfosten rechteckig 6 x 12 [496898]
+    400332: Pfosten rechteckig 6 x 12 [496900]
+    400334: Pfosten rechteckig 6 x 12 [499958]
+    400336: Pfosten rechteckig 6 x 12 [499959]
+    400338: Pfosten rechteckig 6 x 12 [499960]
+    400340: Pfosten rechteckig 6 x 12 [500285]
+    400342: Pfosten rechteckig 6 x 12 [500287]
+    400344: Pfosten rechteckig 6 x 12 [500288]
+    400346: Pfosten rechteckig 6 x 12 [500702]
+    400348: Pfosten rechteckig 6 x 12 [500705]
+    400350: Pfosten rechteckig 6 x 12 [503372]
+    400352: Pfosten rechteckig 6 x 12 [503373]
+    400354: Pfosten rechteckig 6 x 12 [503374]
+    400356: Pfosten rechteckig 6 x 12 [503375]
+    400358: Pfosten rechteckig 6 x 12 [503376]
+    400360: Pfosten rechteckig 6 x 12 [503380]
+    400362: Pfosten rechteckig 6 x 12 [503381]
+    400364: Pfosten rechteckig 6 x 12 [503382]
+    400366: Pfosten rechteckig 6 x 12 [503383]
+    400368: Pfosten rechteckig 6 x 12 [503388]
+    400370: Pfosten rechteckig 6 x 12 [503389]
+    400372: Pfosten rechteckig 6 x 12 [503390]
+    400374: Pfosten rechteckig 6 x 12 [503391]
+    400376: Pfosten rechteckig 6 x 12 [503392]
+    400378: Pfosten rechteckig 6 x 12 [503396]
+    400380: Pfosten rechteckig 6 x 12 [503397]
+    400382: Pfosten rechteckig 6 x 12 [503398]
+    400384: Pfosten rechteckig 6 x 12 [503399]
+    400386: Pfosten rechteckig 6 x 12 [503516]
+    400388: Pfosten rechteckig 6 x 12 [503517]
+    400390: Pfosten rechteckig 6 x 12 [503518]
+    400392: Pfosten rechteckig 6 x 12 [503521]
+    400394: Pfosten rechteckig 6 x 12 [503522]
+    400396: Pfosten rechteckig 6 x 12 [503523]
+    400398: Pfosten rechteckig 6 x 12 [503526]
+    400400: Pfosten rechteckig 6 x 12 [503527]
+    400402: Rohrtypen Vorgabe [605415]
+    400404: Rohrtypen Vorgabe [609607]
+    400406: Rohrtypen Vorgabe [615510]
+    400408: Rohrtypen Vorgabe [638030]
+    400410: Rohrtypen Vorgabe [638073]
+    400412: Schalter - Dimmer einpolig Standard [561337]
+    400414: Schalter 1-polig [567369]
+    400416: "STB St\xFCtze - rechteckig STB 30 x 30 [417561]"
+    400418: "STB St\xFCtze - rechteckig STB 30 x 30 [421595]"
+    400420: Steckdose 3-fach Aufputz Standard [635900]
+    400422: Steckdose 3-fach Aufputz Standard [644085]
+    400424: Steckdose 3-fach Aufputz Standard [644307]
+    400426: Systemelement Verglasung [493758]
+    400428: Systemelement Verglasung [496109]
+    400430: Systemelement Verglasung [496880]
+    400432: Systemelement Verglasung [496889]
+    400434: Systemelement Verglasung [499954]
+    400436: Systemelement Verglasung [500274]
+    400438: Systemelement Verglasung [503369]
+    400440: Systemelement Verglasung [503378]
+    400442: Systemelement Verglasung [503385]
+    400444: Systemelement Verglasung [503394]
+    400446: Systemelement Verglasung [503515]
+    400448: Systemelement Verglasung [503520]
+    400450: Typ des oberen Holms Holz - Rund - 40 mm m. Versatz [487076]
+    400452: Typ des oberen Holms Holz - Rund - 40 mm m. Versatz [487087]
+    400454: "T\xFCrelement 2-flg - Schiebefl\xFCgel Standard [502101]"
+    400456: "T\xFCrelement 2-flg - Schiebefl\xFCgel Standard [502106]"
+    400458: "T\xFCrelement 2-flg - Schiebefl\xFCgel Standard [503401]"
+    400460: "T\xFCrelement 2-flg - Schiebefl\xFCgel Standard [503403]"
+    400462: Verbindung - allgemein Standard [615348]
+    400464: Verteilerdose rund Standard [590161]
+    400466: Verteilerdose rund Standard [627999]
+    400468: Verteilerdose rund Standard [628093]
+    400470: Verteilerdose rund Standard [628546]
+    400472: Verteilerdose rund Standard [644523]
+    400474: Verteilerdose rund Standard [647010]
+    400476: Verteilerdose rund Standard [647160]
+    400478: Verteilerdose rund Standard [647355]
+    400480: Verteilerdose rund Standard [647432]
+    400482: Verteilerdose rund Standard [647566]
+    2000000: '3D-Ansicht: {3D}'
+    2100000: No Name
+    2300000: Basiswand GK 10.0 [454528]
+    2300002: Basiswand GK 10.0 [454732]
+    2300004: Basiswand GK 10.0 [454924]
+    2300006: Basiswand GK 10.0 [455040]
+    2300008: Basiswand GK 10.0 [455478]
+    2300010: Basiswand GK 10.0 [457927]
+    2300012: Basiswand GK 10.0 [458210]
+    2300014: Basiswand GK 10.0 [458407]
+    2300016: Basiswand GK 10.0 [458572]
+    2300018: Basiswand GK 10.0 [458684]
+    2300020: Basiswand GK 20.0 2 [449785]
+    2300022: Basiswand GK 20.0 2 [465365]
+    2300024: Basiswand GK 20.0 2 [471813]
+    2300026: Basiswand GK 20.0 2 [482211]
+    2300028: Basiswand GK 20.0 2 [482302]
+    2300030: Basiswand GK 25.0 [480496]
+    2300032: Basiswand STB 21.0 - Sichtbeton 1 [414948]
+    2300034: Basiswand STB 25.0 - Sichtbeton 3 [484654]
+    2300036: Basiswand STB 25.0 - Sichtbeton 3 [484740]
+    2300038: Basiswand STB 25.0 - Sichtbeton 3 [484828]
+    2300040: Basiswand STB 25.0 [451737]
+    2300042: Basiswand STB 25.0 [462739]
+    2300044: Basiswand STB 25.0 [483965]
+    2300046: Basiswand STB 30.0 - Sichtbeton 2 [397476]
+    2300048: Basiswand STB 30.0 - Sichtbeton 2 [399356]
+    2300050: Basiswand STB 30.0 - Sichtbeton 2 [401273]
+    2300052: Basiswand STB 30.0 - Sichtbeton 2 [403998]
+    2300054: Basiswand STB 30.0 - Sichtbeton 2 [453275]
+    2300056: Basiswand STB 30.0 - Sichtbeton 2 [453457]
+    2300058: Basiswand STB 30.0 - Sichtbeton 2 [453875]
+    2300060: Basiswand STB 30.0 - Sichtbeton 2 [459931]
+    2300062: Basiswand STB 30.0 - Sichtbeton 2 [460080]
+    2300064: Basiswand STB 30.0 - Sichtbeton 2 [469347]
+    2300066: Basiswand STB 30.0 - Sichtbeton 2 [471247]
+    2300068: Basiswand STB 30.0 - Sichtbeton 2 [473418]
+    2300070: Basiswand STB 30.0 - Sichtbeton 2 [530152]
+    2300072: Basiswand STB 30.0 - Sichtbeton holz [532332]
+    2300074: Basiswand STB 30.8- Sichtbeton 3 [411147]
+    2300076: Basiswand STB 50.0 - Sichtbeton 3 [434483]
+    2300078: Basiswand STB 60.0 - Sichtbeton 3 [403586]
+    2300080: Basiswand STB 60.0 - Sichtbeton 3 [435913]
+    2300082: Bogen HT Standard [640882]
+    2300084: Bogen HT Standard [648438]
+    2300086: Conduit Elbow - Plain End - PVC Standard [601951]
+    2300088: Conduit Elbow - Plain End - PVC Standard [603579]
+    2300090: Conduit Elbow - Plain End - PVC Standard [627150]
+    2300092: Conduit Elbow - Plain End - PVC Standard [627161]
+    2300094: Conduit Elbow - Plain End - PVC Standard [631223]
+    2300096: Conduit Elbow - Plain End - PVC Standard [641616]
+    2300098: Conduit Elbow - Plain End - PVC Standard [642161]
+    2300100: Conduit Elbow - Plain End - PVC Standard [651049]
+    2300102: Conduit Junction Box - Cross - PVC Standard [602144]
+    2300104: Conduit Junction Box - Cross - PVC Standard [603956]
+    2300106: Conduit Junction Box - Cross - PVC Standard [604169]
+    2300108: Conduit Junction Box - Cross - PVC Standard [604216]
+    2300110: Conduit Junction Box - Cross - PVC Standard [641229]
+    2300112: Conduit Junction Box - Cross - PVC Standard [647778]
+    2300114: "Drehfl\xFCgel 1-flg - Blockzarge 1.26 x 2.26 [534149]"
+    2300116: "Drehfl\xFCgel 1-flg - Blockzarge 1.26 x 2.26 [534670]"
+    2300118: "Drehfl\xFCgel 1-flg - Stahlzarge 88.5 x 2.26 [400111]"
+    2300120: "Drehfl\xFCgel 1-flg - Stahlzarge 88.5 x 2.26 [401729]"
+    2300122: "Drehfl\xFCgel 1-flg - Stahlzarge 88.5 x 2.26 [481872]"
+    2300124: "Drehfl\xFCgel 1-flg - Stahlzarge 88.5 x 2.26 [490344]"
+    2300126: "Drehfl\xFCgel 1-flg - Stahlzarge 88.5 x 2.26 [490866]"
+    2300128: "Drehfl\xFCgel 1-flg - Stahlzarge 88.5 x 2.26 [491462]"
+    2300130: "Drehfl\xFCgel 1-flg - Stahlzarge 88.5 x 2.26 [492216]"
+    2300132: Eckventil - Gewinde Standard [637886]
+    2300134: Eckventil - Gewinde Standard [637899]
+    2300136: Fenster - Festverglasung Feste Verglasung 1.0 x2 2 [476570]
+    2300138: Fenster - Festverglasung Feste Verglasung 1.25x2 [444214]
+    2300140: Fenster - Festverglasung Feste Verglasung 1.25x2 [476023]
+    2300142: Fenster - Festverglasung Feste Verglasung 4.58 x 0.96 2 [474263]
+    2300144: Fenster - Festverglasung Feste Verglasung 4.58 x 1.03 [465822]
+    2300146: Fenster - Festverglasung Feste Verglasung 4.58 x 1.05 2 [473570]
+    2300148: Fenster - Festverglasung Feste Verglasung 4.58 x 1.31 3 2 2 [464349]
+    2300150: Fenster - Festverglasung Feste Verglasung 4.58 x 1.31 3 2 [473784]
+    2300152: Fenster - Festverglasung Feste Verglasung 4.58 x 1.37 [460791]
+    2300154: Fenster - Festverglasung Feste Verglasung 4.58 x 1.37 [473965]
+    2300156: Fenster - Festverglasung Feste Verglasung 4.58 x 1.40 2 [466249]
+    2300158: Fenster - Festverglasung Feste Verglasung 4.58 x 1.45 3 [474816]
+    2300160: Fenster - Festverglasung Feste Verglasung 4.58 x 1.45 3 [474949]
+    2300162: Fenster - Festverglasung Feste Verglasung 4.58 x 1.45 3 [475058]
+    2300164: Fenster - Festverglasung Feste Verglasung 4.58 x 1.61 2 [463459]
+    2300166: Fenster - Festverglasung Feste Verglasung 4.58 x 1.63 [446162]
+    2300168: Fenster - Festverglasung Feste Verglasung 4.58 x 1.77 3 2 2 2 [468259]
+    2300170: Fenster - Festverglasung Feste Verglasung 4.58 x 1.79 3 [464145]
+    2300172: Fenster - Festverglasung Feste Verglasung 4.58 x 1.8 [439534]
+    2300174: Fenster - Festverglasung Feste Verglasung 4.58 x 1.8 [440644]
+    2300176: Fenster - Festverglasung Feste Verglasung 4.58 x 1.8 [442832]
+    2300178: Fenster - Festverglasung Feste Verglasung 4.58 x 1.9 2 [466731]
+    2300180: Fenster - Festverglasung Feste Verglasung 4.58 x 1.9 2 [466967]
+    2300182: Fenster - Festverglasung Feste Verglasung 4.58 x 1.9 2 [467165]
+    2300184: Fenster - Festverglasung Feste Verglasung 4.58 x 1.9 2 [467321]
+    2300186: Fenster - Festverglasung Feste Verglasung 4.58 x 1.9 2 [467433]
+    2300188: Fenster - Festverglasung Feste Verglasung 4.58 x 1.9 2 [467542]
+    2300190: Fenster - Festverglasung Feste Verglasung 4.58 x 1.9 2 [467631]
+    2300192: Fenster - Festverglasung Feste Verglasung 4.58 x 1.9 2 [468539]
+    2300194: "Fenstert\xFCr 1-flg 1.80 x  1 [476569]"
+    2300196: "Fenstert\xFCr 1-flg 1.80 x  3,1 [443159]"
+    2300198: "Fenstert\xFCr 1-flg 1.80 x  3,1 [476022]"
+    2300200: Fertigbetontreppe Treppe [486260]
+    2300202: Fertigbetontreppe Treppe [486260]_[486469]
+    2300204: "Geschossdecke Flie\xDFen [520619]"
+    2300206: Geschossdecke Parkett [509375]
+    2300208: Geschossdecke PVC [512761]
+    2300210: Geschossdecke PVC [518013]
+    2300212: Geschossdecke PVC [521739]
+    2300214: Geschossdecke PVC [522483]
+    2300216: Geschossdecke PVC [524293]
+    2300218: Geschossdecke STB 30 [508529]
+    2300220: Handwaschbecken Standard [571508]
+    2300222: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [564752]"
+    2300224: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [564908]"
+    2300226: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [568870]"
+    2300228: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [587966]"
+    2300230: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [588093]"
+    2300232: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [588314]"
+    2300234: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [588438]"
+    2300236: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [588554]"
+    2300238: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [588942]"
+    2300240: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [589131]"
+    2300242: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [589334]"
+    2300244: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [589417]"
+    2300246: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [589476]"
+    2300248: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [589553]"
+    2300250: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [589598]"
+    2300252: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [589796]"
+    2300254: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [589919]"
+    2300256: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [590216]"
+    2300258: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [590289]"
+    2300260: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [590334]"
+    2300262: Leerrohr mit Formteilen Leerrohr [596679]
+    2300264: Leerrohr ohne Formteile Leerrohr [595213]
+    2300266: Leerrohr ohne Formteile Leerrohr [596695]
+    2300268: Leerrohr ohne Formteile Leerrohr [601688]
+    2300270: Leerrohr ohne Formteile Leerrohr [601711]
+    2300272: Leerrohr ohne Formteile Leerrohr [601932]
+    2300274: Leerrohr ohne Formteile Leerrohr [602095]
+    2300276: Leerrohr ohne Formteile Leerrohr [602106]
+    2300278: Leerrohr ohne Formteile Leerrohr [603531]
+    2300280: Leerrohr ohne Formteile Leerrohr [603562]
+    2300282: Leerrohr ohne Formteile Leerrohr [627123]
+    2300284: Leerrohr ohne Formteile Leerrohr [627143]
+    2300286: Leerrohr ohne Formteile Leerrohr [627163]
+    2300288: Leerrohr ohne Formteile Leerrohr [642159]
+    2300290: "Massivtreppenlauf Holzauftritt 30 mm, Tritt\xFCberstand 30 mm [486468]"
+    2300292: "Massivtreppenlauf Holzauftritt 30 mm, Tritt\xFCberstand 30 mm [486468]_[486469]"
+    2300294: Pfosten rechteckig 6 x 12 [493766]
+    2300296: Pfosten rechteckig 6 x 12 [493767]
+    2300298: Pfosten rechteckig 6 x 12 [493769]
+    2300300: Pfosten rechteckig 6 x 12 [493770]
+    2300302: Pfosten rechteckig 6 x 12 [493771]
+    2300304: Pfosten rechteckig 6 x 12 [496123]
+    2300306: Pfosten rechteckig 6 x 12 [496125]
+    2300308: Pfosten rechteckig 6 x 12 [496127]
+    2300310: Pfosten rechteckig 6 x 12 [496129]
+    2300312: Pfosten rechteckig 6 x 12 [496883]
+    2300314: Pfosten rechteckig 6 x 12 [496884]
+    2300316: Pfosten rechteckig 6 x 12 [496885]
+    2300318: Pfosten rechteckig 6 x 12 [496886]
+    2300320: Pfosten rechteckig 6 x 12 [496887]
+    2300322: Pfosten rechteckig 6 x 12 [496894]
+    2300324: Pfosten rechteckig 6 x 12 [496896]
+    2300326: Pfosten rechteckig 6 x 12 [496898]
+    2300328: Pfosten rechteckig 6 x 12 [496900]
+    2300330: Pfosten rechteckig 6 x 12 [499958]
+    2300332: Pfosten rechteckig 6 x 12 [499959]
+    2300334: Pfosten rechteckig 6 x 12 [499960]
+    2300336: Pfosten rechteckig 6 x 12 [500285]
+    2300338: Pfosten rechteckig 6 x 12 [500287]
+    2300340: Pfosten rechteckig 6 x 12 [500288]
+    2300342: Pfosten rechteckig 6 x 12 [500702]
+    2300344: Pfosten rechteckig 6 x 12 [500705]
+    2300346: Pfosten rechteckig 6 x 12 [503372]
+    2300348: Pfosten rechteckig 6 x 12 [503373]
+    2300350: Pfosten rechteckig 6 x 12 [503374]
+    2300352: Pfosten rechteckig 6 x 12 [503375]
+    2300354: Pfosten rechteckig 6 x 12 [503376]
+    2300356: Pfosten rechteckig 6 x 12 [503380]
+    2300358: Pfosten rechteckig 6 x 12 [503381]
+    2300360: Pfosten rechteckig 6 x 12 [503382]
+    2300362: Pfosten rechteckig 6 x 12 [503383]
+    2300364: Pfosten rechteckig 6 x 12 [503388]
+    2300366: Pfosten rechteckig 6 x 12 [503389]
+    2300368: Pfosten rechteckig 6 x 12 [503390]
+    2300370: Pfosten rechteckig 6 x 12 [503391]
+    2300372: Pfosten rechteckig 6 x 12 [503392]
+    2300374: Pfosten rechteckig 6 x 12 [503396]
+    2300376: Pfosten rechteckig 6 x 12 [503397]
+    2300378: Pfosten rechteckig 6 x 12 [503398]
+    2300380: Pfosten rechteckig 6 x 12 [503399]
+    2300382: Pfosten rechteckig 6 x 12 [503516]
+    2300384: Pfosten rechteckig 6 x 12 [503517]
+    2300386: Pfosten rechteckig 6 x 12 [503518]
+    2300388: Pfosten rechteckig 6 x 12 [503521]
+    2300390: Pfosten rechteckig 6 x 12 [503522]
+    2300392: Pfosten rechteckig 6 x 12 [503523]
+    2300394: Pfosten rechteckig 6 x 12 [503526]
+    2300396: Pfosten rechteckig 6 x 12 [503527]
+    2300398: Rohrtypen Vorgabe [605415]
+    2300400: Rohrtypen Vorgabe [609607]
+    2300402: Rohrtypen Vorgabe [615510]
+    2300404: Rohrtypen Vorgabe [638030]
+    2300406: Rohrtypen Vorgabe [638073]
+    2300408: Schalter - Dimmer einpolig Standard [561337]
+    2300410: Schalter 1-polig [567369]
+    2300412: "STB St\xFCtze - rechteckig STB 30 x 30 [417561]"
+    2300414: "STB St\xFCtze - rechteckig STB 30 x 30 [421595]"
+    2300416: Steckdose 3-fach Aufputz Standard [635900]
+    2300418: Steckdose 3-fach Aufputz Standard [644085]
+    2300420: Steckdose 3-fach Aufputz Standard [644307]
+    2300422: Systemelement Verglasung [493758]
+    2300424: Systemelement Verglasung [496109]
+    2300426: Systemelement Verglasung [496880]
+    2300428: Systemelement Verglasung [496889]
+    2300430: Systemelement Verglasung [499954]
+    2300432: Systemelement Verglasung [500274]
+    2300434: Systemelement Verglasung [503369]
+    2300436: Systemelement Verglasung [503378]
+    2300438: Systemelement Verglasung [503385]
+    2300440: Systemelement Verglasung [503394]
+    2300442: Systemelement Verglasung [503515]
+    2300444: Systemelement Verglasung [503520]
+    2300446: Typ des oberen Holms Holz - Rund - 40 mm m. Versatz [487076]
+    2300448: Typ des oberen Holms Holz - Rund - 40 mm m. Versatz [487087]
+    2300450: "T\xFCrelement 2-flg - Schiebefl\xFCgel Standard [502101]"
+    2300452: "T\xFCrelement 2-flg - Schiebefl\xFCgel Standard [502106]"
+    2300454: "T\xFCrelement 2-flg - Schiebefl\xFCgel Standard [503401]"
+    2300456: "T\xFCrelement 2-flg - Schiebefl\xFCgel Standard [503403]"
+    2300458: Verbindung - allgemein Standard [615348]
+    2300460: Verteilerdose rund Standard [590161]
+    2300462: Verteilerdose rund Standard [627999]
+    2300464: Verteilerdose rund Standard [628093]
+    2300466: Verteilerdose rund Standard [628546]
+    2300468: Verteilerdose rund Standard [644523]
+    2300470: Verteilerdose rund Standard [647010]
+    2300472: Verteilerdose rund Standard [647160]
+    2300474: Verteilerdose rund Standard [647355]
+    2300476: Verteilerdose rund Standard [647432]
+    2300478: Verteilerdose rund Standard [647566]
+    3300000: Basiswand GK 10.0 [454528]
+    3300002: Basiswand GK 10.0 [454732]
+    3300004: Basiswand GK 10.0 [454924]
+    3300006: Basiswand GK 10.0 [455040]
+    3300008: Basiswand GK 10.0 [455478]
+    3300010: Basiswand GK 10.0 [457927]
+    3300012: Basiswand GK 10.0 [458210]
+    3300014: Basiswand GK 10.0 [458407]
+    3300016: Basiswand GK 10.0 [458572]
+    3300018: Basiswand GK 10.0 [458684]
+    3300020: Basiswand GK 20.0 2 [449785]
+    3300022: Basiswand GK 20.0 2 [465365]
+    3300024: Basiswand GK 20.0 2 [471813]
+    3300026: Basiswand GK 20.0 2 [482211]
+    3300028: Basiswand GK 20.0 2 [482302]
+    3300030: Basiswand GK 25.0 [480496]
+    3300032: Basiswand STB 21.0 - Sichtbeton 1 [414948]
+    3300034: Basiswand STB 25.0 - Sichtbeton 3 [484654]
+    3300036: Basiswand STB 25.0 - Sichtbeton 3 [484740]
+    3300038: Basiswand STB 25.0 - Sichtbeton 3 [484828]
+    3300040: Basiswand STB 25.0 [451737]
+    3300042: Basiswand STB 25.0 [462739]
+    3300044: Basiswand STB 25.0 [483965]
+    3300046: Basiswand STB 30.0 - Sichtbeton 2 [397476]
+    3300048: Basiswand STB 30.0 - Sichtbeton 2 [399356]
+    3300050: Basiswand STB 30.0 - Sichtbeton 2 [401273]
+    3300052: Basiswand STB 30.0 - Sichtbeton 2 [403998]
+    3300054: Basiswand STB 30.0 - Sichtbeton 2 [453275]
+    3300056: Basiswand STB 30.0 - Sichtbeton 2 [453457]
+    3300058: Basiswand STB 30.0 - Sichtbeton 2 [453875]
+    3300060: Basiswand STB 30.0 - Sichtbeton 2 [459931]
+    3300062: Basiswand STB 30.0 - Sichtbeton 2 [460080]
+    3300064: Basiswand STB 30.0 - Sichtbeton 2 [469347]
+    3300066: Basiswand STB 30.0 - Sichtbeton 2 [471247]
+    3300068: Basiswand STB 30.0 - Sichtbeton 2 [473418]
+    3300070: Basiswand STB 30.0 - Sichtbeton 2 [530152]
+    3300072: Basiswand STB 30.0 - Sichtbeton holz [532332]
+    3300074: Basiswand STB 30.8- Sichtbeton 3 [411147]
+    3300076: Basiswand STB 50.0 - Sichtbeton 3 [434483]
+    3300078: Basiswand STB 60.0 - Sichtbeton 3 [403586]
+    3300080: Basiswand STB 60.0 - Sichtbeton 3 [435913]
+    3300082: Bogen HT Standard [640882]
+    3300084: Bogen HT Standard [648438]
+    3300086: Conduit Elbow - Plain End - PVC Standard [601951]
+    3300088: Conduit Elbow - Plain End - PVC Standard [603579]
+    3300090: Conduit Elbow - Plain End - PVC Standard [627150]
+    3300092: Conduit Elbow - Plain End - PVC Standard [627161]
+    3300094: Conduit Elbow - Plain End - PVC Standard [631223]
+    3300096: Conduit Elbow - Plain End - PVC Standard [641616]
+    3300098: Conduit Elbow - Plain End - PVC Standard [642161]
+    3300100: Conduit Elbow - Plain End - PVC Standard [651049]
+    3300102: Conduit Junction Box - Cross - PVC Standard [602144]
+    3300104: Conduit Junction Box - Cross - PVC Standard [603956]
+    3300106: Conduit Junction Box - Cross - PVC Standard [604169]
+    3300108: Conduit Junction Box - Cross - PVC Standard [604216]
+    3300110: Conduit Junction Box - Cross - PVC Standard [641229]
+    3300112: Conduit Junction Box - Cross - PVC Standard [647778]
+    3300114: "Drehfl\xFCgel 1-flg - Blockzarge 1.26 x 2.26 [534149]"
+    3300116: "Drehfl\xFCgel 1-flg - Blockzarge 1.26 x 2.26 [534670]"
+    3300118: "Drehfl\xFCgel 1-flg - Stahlzarge 88.5 x 2.26 [400111]"
+    3300120: "Drehfl\xFCgel 1-flg - Stahlzarge 88.5 x 2.26 [401729]"
+    3300122: "Drehfl\xFCgel 1-flg - Stahlzarge 88.5 x 2.26 [481872]"
+    3300124: "Drehfl\xFCgel 1-flg - Stahlzarge 88.5 x 2.26 [490344]"
+    3300126: "Drehfl\xFCgel 1-flg - Stahlzarge 88.5 x 2.26 [490866]"
+    3300128: "Drehfl\xFCgel 1-flg - Stahlzarge 88.5 x 2.26 [491462]"
+    3300130: "Drehfl\xFCgel 1-flg - Stahlzarge 88.5 x 2.26 [492216]"
+    3300132: Eckventil - Gewinde Standard [637886]
+    3300134: Eckventil - Gewinde Standard [637899]
+    3300136: Fenster - Festverglasung Feste Verglasung 1.0 x2 2 [476570]
+    3300138: Fenster - Festverglasung Feste Verglasung 1.25x2 [444214]
+    3300140: Fenster - Festverglasung Feste Verglasung 1.25x2 [476023]
+    3300142: Fenster - Festverglasung Feste Verglasung 4.58 x 0.96 2 [474263]
+    3300144: Fenster - Festverglasung Feste Verglasung 4.58 x 1.03 [465822]
+    3300146: Fenster - Festverglasung Feste Verglasung 4.58 x 1.05 2 [473570]
+    3300148: Fenster - Festverglasung Feste Verglasung 4.58 x 1.31 3 2 2 [464349]
+    3300150: Fenster - Festverglasung Feste Verglasung 4.58 x 1.31 3 2 [473784]
+    3300152: Fenster - Festverglasung Feste Verglasung 4.58 x 1.37 [460791]
+    3300154: Fenster - Festverglasung Feste Verglasung 4.58 x 1.37 [473965]
+    3300156: Fenster - Festverglasung Feste Verglasung 4.58 x 1.40 2 [466249]
+    3300158: Fenster - Festverglasung Feste Verglasung 4.58 x 1.45 3 [474816]
+    3300160: Fenster - Festverglasung Feste Verglasung 4.58 x 1.45 3 [474949]
+    3300162: Fenster - Festverglasung Feste Verglasung 4.58 x 1.45 3 [475058]
+    3300164: Fenster - Festverglasung Feste Verglasung 4.58 x 1.61 2 [463459]
+    3300166: Fenster - Festverglasung Feste Verglasung 4.58 x 1.63 [446162]
+    3300168: Fenster - Festverglasung Feste Verglasung 4.58 x 1.77 3 2 2 2 [468259]
+    3300170: Fenster - Festverglasung Feste Verglasung 4.58 x 1.79 3 [464145]
+    3300172: Fenster - Festverglasung Feste Verglasung 4.58 x 1.8 [439534]
+    3300174: Fenster - Festverglasung Feste Verglasung 4.58 x 1.8 [440644]
+    3300176: Fenster - Festverglasung Feste Verglasung 4.58 x 1.8 [442832]
+    3300178: Fenster - Festverglasung Feste Verglasung 4.58 x 1.9 2 [466731]
+    3300180: Fenster - Festverglasung Feste Verglasung 4.58 x 1.9 2 [466967]
+    3300182: Fenster - Festverglasung Feste Verglasung 4.58 x 1.9 2 [467165]
+    3300184: Fenster - Festverglasung Feste Verglasung 4.58 x 1.9 2 [467321]
+    3300186: Fenster - Festverglasung Feste Verglasung 4.58 x 1.9 2 [467433]
+    3300188: Fenster - Festverglasung Feste Verglasung 4.58 x 1.9 2 [467542]
+    3300190: Fenster - Festverglasung Feste Verglasung 4.58 x 1.9 2 [467631]
+    3300192: Fenster - Festverglasung Feste Verglasung 4.58 x 1.9 2 [468539]
+    3300194: "Fenstert\xFCr 1-flg 1.80 x  1 [476569]"
+    3300196: "Fenstert\xFCr 1-flg 1.80 x  3,1 [443159]"
+    3300198: "Fenstert\xFCr 1-flg 1.80 x  3,1 [476022]"
+    3300200: Fertigbetontreppe Treppe [486260]
+    3300202: Fertigbetontreppe Treppe [486260]_[486469]
+    3300204: "Geschossdecke Flie\xDFen [520619]"
+    3300206: Geschossdecke Parkett [509375]
+    3300208: Geschossdecke PVC [512761]
+    3300210: Geschossdecke PVC [518013]
+    3300212: Geschossdecke PVC [521739]
+    3300214: Geschossdecke PVC [522483]
+    3300216: Geschossdecke PVC [524293]
+    3300218: Geschossdecke STB 30 [508529]
+    3300220: Handwaschbecken Standard [571508]
+    3300222: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [564752]"
+    3300224: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [564908]"
+    3300226: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [568870]"
+    3300228: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [587966]"
+    3300230: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [588093]"
+    3300232: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [588314]"
+    3300234: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [588438]"
+    3300236: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [588554]"
+    3300238: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [588942]"
+    3300240: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [589131]"
+    3300242: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [589334]"
+    3300244: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [589417]"
+    3300246: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [589476]"
+    3300248: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [589553]"
+    3300250: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [589598]"
+    3300252: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [589796]"
+    3300254: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [589919]"
+    3300256: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [590216]"
+    3300258: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [590289]"
+    3300260: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [590334]"
+    3300262: Leerrohr mit Formteilen Leerrohr [596679]
+    3300264: Leerrohr ohne Formteile Leerrohr [595213]
+    3300266: Leerrohr ohne Formteile Leerrohr [596695]
+    3300268: Leerrohr ohne Formteile Leerrohr [601688]
+    3300270: Leerrohr ohne Formteile Leerrohr [601711]
+    3300272: Leerrohr ohne Formteile Leerrohr [601932]
+    3300274: Leerrohr ohne Formteile Leerrohr [602095]
+    3300276: Leerrohr ohne Formteile Leerrohr [602106]
+    3300278: Leerrohr ohne Formteile Leerrohr [603531]
+    3300280: Leerrohr ohne Formteile Leerrohr [603562]
+    3300282: Leerrohr ohne Formteile Leerrohr [627123]
+    3300284: Leerrohr ohne Formteile Leerrohr [627143]
+    3300286: Leerrohr ohne Formteile Leerrohr [627163]
+    3300288: Leerrohr ohne Formteile Leerrohr [642159]
+    3300290: "Massivtreppenlauf Holzauftritt 30 mm, Tritt\xFCberstand 30 mm [486468]"
+    3300292: "Massivtreppenlauf Holzauftritt 30 mm, Tritt\xFCberstand 30 mm [486468]_[486469]"
+    3300294: Pfosten rechteckig 6 x 12 [493766]
+    3300296: Pfosten rechteckig 6 x 12 [493767]
+    3300298: Pfosten rechteckig 6 x 12 [493769]
+    3300300: Pfosten rechteckig 6 x 12 [493770]
+    3300302: Pfosten rechteckig 6 x 12 [493771]
+    3300304: Pfosten rechteckig 6 x 12 [496123]
+    3300306: Pfosten rechteckig 6 x 12 [496125]
+    3300308: Pfosten rechteckig 6 x 12 [496127]
+    3300310: Pfosten rechteckig 6 x 12 [496129]
+    3300312: Pfosten rechteckig 6 x 12 [496883]
+    3300314: Pfosten rechteckig 6 x 12 [496884]
+    3300316: Pfosten rechteckig 6 x 12 [496885]
+    3300318: Pfosten rechteckig 6 x 12 [496886]
+    3300320: Pfosten rechteckig 6 x 12 [496887]
+    3300322: Pfosten rechteckig 6 x 12 [496894]
+    3300324: Pfosten rechteckig 6 x 12 [496896]
+    3300326: Pfosten rechteckig 6 x 12 [496898]
+    3300328: Pfosten rechteckig 6 x 12 [496900]
+    3300330: Pfosten rechteckig 6 x 12 [499958]
+    3300332: Pfosten rechteckig 6 x 12 [499959]
+    3300334: Pfosten rechteckig 6 x 12 [499960]
+    3300336: Pfosten rechteckig 6 x 12 [500285]
+    3300338: Pfosten rechteckig 6 x 12 [500287]
+    3300340: Pfosten rechteckig 6 x 12 [500288]
+    3300342: Pfosten rechteckig 6 x 12 [500702]
+    3300344: Pfosten rechteckig 6 x 12 [500705]
+    3300346: Pfosten rechteckig 6 x 12 [503372]
+    3300348: Pfosten rechteckig 6 x 12 [503373]
+    3300350: Pfosten rechteckig 6 x 12 [503374]
+    3300352: Pfosten rechteckig 6 x 12 [503375]
+    3300354: Pfosten rechteckig 6 x 12 [503376]
+    3300356: Pfosten rechteckig 6 x 12 [503380]
+    3300358: Pfosten rechteckig 6 x 12 [503381]
+    3300360: Pfosten rechteckig 6 x 12 [503382]
+    3300362: Pfosten rechteckig 6 x 12 [503383]
+    3300364: Pfosten rechteckig 6 x 12 [503388]
+    3300366: Pfosten rechteckig 6 x 12 [503389]
+    3300368: Pfosten rechteckig 6 x 12 [503390]
+    3300370: Pfosten rechteckig 6 x 12 [503391]
+    3300372: Pfosten rechteckig 6 x 12 [503392]
+    3300374: Pfosten rechteckig 6 x 12 [503396]
+    3300376: Pfosten rechteckig 6 x 12 [503397]
+    3300378: Pfosten rechteckig 6 x 12 [503398]
+    3300380: Pfosten rechteckig 6 x 12 [503399]
+    3300382: Pfosten rechteckig 6 x 12 [503516]
+    3300384: Pfosten rechteckig 6 x 12 [503517]
+    3300386: Pfosten rechteckig 6 x 12 [503518]
+    3300388: Pfosten rechteckig 6 x 12 [503521]
+    3300390: Pfosten rechteckig 6 x 12 [503522]
+    3300392: Pfosten rechteckig 6 x 12 [503523]
+    3300394: Pfosten rechteckig 6 x 12 [503526]
+    3300396: Pfosten rechteckig 6 x 12 [503527]
+    3300398: Rohrtypen Vorgabe [605415]
+    3300400: Rohrtypen Vorgabe [609607]
+    3300402: Rohrtypen Vorgabe [615510]
+    3300404: Rohrtypen Vorgabe [638030]
+    3300406: Rohrtypen Vorgabe [638073]
+    3300408: Schalter - Dimmer einpolig Standard [561337]
+    3300410: Schalter 1-polig [567369]
+    3300412: "STB St\xFCtze - rechteckig STB 30 x 30 [417561]"
+    3300414: "STB St\xFCtze - rechteckig STB 30 x 30 [421595]"
+    3300416: Steckdose 3-fach Aufputz Standard [635900]
+    3300418: Steckdose 3-fach Aufputz Standard [644085]
+    3300420: Steckdose 3-fach Aufputz Standard [644307]
+    3300422: Systemelement Verglasung [493758]
+    3300424: Systemelement Verglasung [496109]
+    3300426: Systemelement Verglasung [496880]
+    3300428: Systemelement Verglasung [496889]
+    3300430: Systemelement Verglasung [499954]
+    3300432: Systemelement Verglasung [500274]
+    3300434: Systemelement Verglasung [503369]
+    3300436: Systemelement Verglasung [503378]
+    3300438: Systemelement Verglasung [503385]
+    3300440: Systemelement Verglasung [503394]
+    3300442: Systemelement Verglasung [503515]
+    3300444: Systemelement Verglasung [503520]
+    3300446: Typ des oberen Holms Holz - Rund - 40 mm m. Versatz [487076]
+    3300448: Typ des oberen Holms Holz - Rund - 40 mm m. Versatz [487087]
+    3300450: "T\xFCrelement 2-flg - Schiebefl\xFCgel Standard [502101]"
+    3300452: "T\xFCrelement 2-flg - Schiebefl\xFCgel Standard [502106]"
+    3300454: "T\xFCrelement 2-flg - Schiebefl\xFCgel Standard [503401]"
+    3300456: "T\xFCrelement 2-flg - Schiebefl\xFCgel Standard [503403]"
+    3300458: Verbindung - allgemein Standard [615348]
+    3300460: Verteilerdose rund Standard [590161]
+    3300462: Verteilerdose rund Standard [627999]
+    3300464: Verteilerdose rund Standard [628093]
+    3300466: Verteilerdose rund Standard [628546]
+    3300468: Verteilerdose rund Standard [644523]
+    3300470: Verteilerdose rund Standard [647010]
+    3300472: Verteilerdose rund Standard [647160]
+    3300474: Verteilerdose rund Standard [647355]
+    3300476: Verteilerdose rund Standard [647432]
+    3300478: Verteilerdose rund Standard [647566]
+    4300000: Basiswand STB 30.0 - Sichtbeton 2 [397476]
+    4300002: Basiswand STB 30.0 - Sichtbeton 2 [399356]
+    4300004: "Drehfl\xFCgel 1-flg - Stahlzarge 88.5 x 2.26 [400111]"
+    4300006: Basiswand STB 30.0 - Sichtbeton 2 [401273]
+    4300008: "Drehfl\xFCgel 1-flg - Stahlzarge 88.5 x 2.26 [401729]"
+    4300010: Basiswand STB 60.0 - Sichtbeton 3 [403586]
+    4300012: Basiswand STB 30.0 - Sichtbeton 2 [403998]
+    4300014: Basiswand STB 30.8- Sichtbeton 3 [411147]
+    4300016: Basiswand STB 21.0 - Sichtbeton 1 [414948]
+    4300018: "STB St\xFCtze - rechteckig STB 30 x 30 [417561]"
+    4300020: Basiswand STB 50.0 - Sichtbeton 3 [434483]
+    4300022: Basiswand STB 60.0 - Sichtbeton 3 [435913]
+    4300024: Fenster - Festverglasung Feste Verglasung 4.58 x 1.8 [439534]
+    4300026: Fenster - Festverglasung Feste Verglasung 4.58 x 1.8 [440644]
+    4300028: "Fenstert\xFCr 1-flg 1.80 x  3,1 [443159]"
+    4300030: Fenster - Festverglasung Feste Verglasung 1.25x2 [444214]
+    4300032: Fenster - Festverglasung Feste Verglasung 4.58 x 1.63 [446162]
+    4300034: Basiswand GK 20.0 2 [449785]
+    4300036: Basiswand STB 25.0 [451737]
+    4300038: Basiswand STB 30.0 - Sichtbeton 2 [453275]
+    4300040: Basiswand STB 30.0 - Sichtbeton 2 [453457]
+    4300042: Basiswand STB 30.0 - Sichtbeton 2 [453875]
+    4300044: Basiswand GK 10.0 [454528]
+    4300046: Basiswand GK 10.0 [454732]
+    4300048: Basiswand GK 10.0 [454924]
+    4300050: Basiswand GK 10.0 [455040]
+    4300052: Basiswand GK 10.0 [455478]
+    4300054: Basiswand GK 10.0 [457927]
+    4300056: Basiswand GK 10.0 [458210]
+    4300058: Basiswand GK 10.0 [458407]
+    4300060: Basiswand GK 10.0 [458572]
+    4300062: Basiswand GK 10.0 [458684]
+    4300064: Basiswand STB 30.0 - Sichtbeton 2 [459931]
+    4300066: Basiswand STB 30.0 - Sichtbeton 2 [460080]
+    4300068: Fenster - Festverglasung Feste Verglasung 4.58 x 1.37 [460791]
+    4300070: Basiswand STB 25.0 [462739]
+    4300072: Fenster - Festverglasung Feste Verglasung 4.58 x 1.61 2 [463459]
+    4300074: Fenster - Festverglasung Feste Verglasung 4.58 x 1.79 3 [464145]
+    4300076: Fenster - Festverglasung Feste Verglasung 4.58 x 1.31 3 2 2 [464349]
+    4300078: Basiswand GK 20.0 2 [465365]
+    4300080: Fenster - Festverglasung Feste Verglasung 4.58 x 1.03 [465822]
+    4300082: Fenster - Festverglasung Feste Verglasung 4.58 x 1.40 2 [466249]
+    4300084: Fenster - Festverglasung Feste Verglasung 4.58 x 1.9 2 [466731]
+    4300086: Fenster - Festverglasung Feste Verglasung 4.58 x 1.77 3 2 2 2 [468259]
+    4300088: Basiswand STB 30.0 - Sichtbeton 2 [469347]
+    4300090: Basiswand STB 30.0 - Sichtbeton 2 [471247]
+    4300092: Basiswand GK 20.0 2 [471813]
+    4300094: Basiswand STB 30.0 - Sichtbeton 2 [473418]
+    4300096: Fenster - Festverglasung Feste Verglasung 4.58 x 1.05 2 [473570]
+    4300098: Fenster - Festverglasung Feste Verglasung 4.58 x 1.31 3 2 [473784]
+    4300100: Fenster - Festverglasung Feste Verglasung 4.58 x 1.37 [473965]
+    4300102: Fenster - Festverglasung Feste Verglasung 4.58 x 0.96 2 [474263]
+    4300104: Fenster - Festverglasung Feste Verglasung 4.58 x 1.45 3 [474816]
+    4300106: "Fenstert\xFCr 1-flg 1.80 x  3,1 [476022]"
+    4300108: Fenster - Festverglasung Feste Verglasung 1.25x2 [476023]
+    4300110: "Fenstert\xFCr 1-flg 1.80 x  1 [476569]"
+    4300112: Fenster - Festverglasung Feste Verglasung 1.0 x2 2 [476570]
+    4300114: Basiswand GK 25.0 [480496]
+    4300116: Basiswand GK 20.0 2 [482211]
+    4300118: Basiswand GK 20.0 2 [482302]
+    4300120: Basiswand STB 25.0 [483965]
+    4300122: Basiswand STB 25.0 - Sichtbeton 3 [484654]
+    4300124: Basiswand STB 25.0 - Sichtbeton 3 [484740]
+    4300126: Basiswand STB 25.0 - Sichtbeton 3 [484828]
+    4300128: Fertigbetontreppe Treppe [486260]
+    4300130: Fertigbetontreppe Treppe [486260]_[486469]
+    4300132: "Massivtreppenlauf Holzauftritt 30 mm, Tritt\xFCberstand 30 mm [486468]"
+    4300134: Typ des oberen Holms Holz - Rund - 40 mm m. Versatz [487076]
+    4300136: Typ des oberen Holms Holz - Rund - 40 mm m. Versatz [487087]
+    4300138: "Drehfl\xFCgel 1-flg - Stahlzarge 88.5 x 2.26 [490344]"
+    4300140: "Drehfl\xFCgel 1-flg - Stahlzarge 88.5 x 2.26 [491462]"
+    4300142: "Drehfl\xFCgel 1-flg - Stahlzarge 88.5 x 2.26 [492216]"
+    4300144: Systemelement Verglasung [493758]
+    4300146: Pfosten rechteckig 6 x 12 [493766]
+    4300148: Pfosten rechteckig 6 x 12 [493767]
+    4300150: Pfosten rechteckig 6 x 12 [493769]
+    4300152: Pfosten rechteckig 6 x 12 [493770]
+    4300154: Pfosten rechteckig 6 x 12 [493771]
+    4300156: Systemelement Verglasung [496109]
+    4300158: Pfosten rechteckig 6 x 12 [496123]
+    4300160: Pfosten rechteckig 6 x 12 [496125]
+    4300162: Pfosten rechteckig 6 x 12 [496127]
+    4300164: Pfosten rechteckig 6 x 12 [496129]
+    4300166: Pfosten rechteckig 6 x 12 [496886]
+    4300168: Systemelement Verglasung [496889]
+    4300170: Pfosten rechteckig 6 x 12 [496894]
+    4300172: Pfosten rechteckig 6 x 12 [496898]
+    4300174: Systemelement Verglasung [499954]
+    4300176: Pfosten rechteckig 6 x 12 [499958]
+    4300178: Pfosten rechteckig 6 x 12 [499959]
+    4300180: Pfosten rechteckig 6 x 12 [499960]
+    4300182: Systemelement Verglasung [500274]
+    4300184: Pfosten rechteckig 6 x 12 [500285]
+    4300186: Pfosten rechteckig 6 x 12 [500287]
+    4300188: Pfosten rechteckig 6 x 12 [500288]
+    4300190: Pfosten rechteckig 6 x 12 [500702]
+    4300192: "T\xFCrelement 2-flg - Schiebefl\xFCgel Standard [502101]"
+    4300194: "T\xFCrelement 2-flg - Schiebefl\xFCgel Standard [502106]"
+    4300196: Pfosten rechteckig 6 x 12 [503374]
+    4300198: Pfosten rechteckig 6 x 12 [503380]
+    4300200: Geschossdecke STB 30 [508529]
+    4300202: Geschossdecke Parkett [509375]
+    4300204: Geschossdecke PVC [512761]
+    4300206: Geschossdecke PVC [518013]
+    4300208: "Geschossdecke Flie\xDFen [520619]"
+    4300210: Geschossdecke PVC [521739]
+    4300212: Geschossdecke PVC [522483]
+    4300214: Geschossdecke PVC [524293]
+    4300216: Basiswand STB 30.0 - Sichtbeton 2 [530152]
+    4300218: Basiswand STB 30.0 - Sichtbeton holz [532332]
+    4300220: "Drehfl\xFCgel 1-flg - Blockzarge 1.26 x 2.26 [534149]"
+    4300222: "Drehfl\xFCgel 1-flg - Blockzarge 1.26 x 2.26 [534670]"
+    4300224: Schalter - Dimmer einpolig Standard [561337]
+    4300226: "Leerdose f\xFCr sp\xE4tere Best\xFCckung Standard [564752]"
+    4300228: Schalter 1-polig [567369]
+    4300230: Handwaschbecken Standard [571508]
+    4300232: Verteilerdose rund Standard [590161]
+    4300234: Leerrohr ohne Formteile Leerrohr [595213]
+    4300236: Leerrohr mit Formteilen Leerrohr [596679]
+    4300238: Leerrohr ohne Formteile Leerrohr [596695]
+    4300240: Leerrohr ohne Formteile Leerrohr [601688]
+    4300242: Leerrohr ohne Formteile Leerrohr [601711]
+    4300244: Leerrohr ohne Formteile Leerrohr [601932]
+    4300246: Conduit Elbow - Plain End - PVC Standard [601951]
+    4300248: Leerrohr ohne Formteile Leerrohr [602095]
+    4300250: Leerrohr ohne Formteile Leerrohr [602106]
+    4300252: Conduit Junction Box - Cross - PVC Standard [602144]
+    4300254: Leerrohr ohne Formteile Leerrohr [603531]
+    4300256: Leerrohr ohne Formteile Leerrohr [603562]
+    4300258: Conduit Elbow - Plain End - PVC Standard [603579]
+    4300260: Conduit Junction Box - Cross - PVC Standard [603956]
+    4300262: Rohrtypen Vorgabe [605415]
+    4300264: Rohrtypen Vorgabe [609607]
+    4300266: Verbindung - allgemein Standard [615348]
+    4300268: Rohrtypen Vorgabe [615510]
+    4300270: Leerrohr ohne Formteile Leerrohr [627123]
+    4300272: Leerrohr ohne Formteile Leerrohr [627143]
+    4300274: Conduit Elbow - Plain End - PVC Standard [627150]
+    4300276: Conduit Elbow - Plain End - PVC Standard [627161]
+    4300278: Leerrohr ohne Formteile Leerrohr [627163]
+    4300280: Conduit Elbow - Plain End - PVC Standard [631223]
+    4300282: Steckdose 3-fach Aufputz Standard [635900]
+    4300284: Eckventil - Gewinde Standard [637886]
+    4300286: Rohrtypen Vorgabe [638030]
+    4300288: Rohrtypen Vorgabe [638073]
+    4300290: Bogen HT Standard [640882]
+    4300292: Conduit Elbow - Plain End - PVC Standard [641616]
+    4300294: Leerrohr ohne Formteile Leerrohr [642159]
+    4300296: Conduit Elbow - Plain End - PVC Standard [642161]
+    4300298: Conduit Junction Box - Cross - PVC Standard [647778]
+    4300300: Conduit Elbow - Plain End - PVC Standard [651049]
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
