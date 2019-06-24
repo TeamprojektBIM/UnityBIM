@@ -29,6 +29,8 @@ namespace GoogleARCore.Examples.Common
     /// </summary>
     public class DetectedPlaneGenerator : MonoBehaviour
     {
+        private bool moving = false;
+
         /// <summary>
         /// A prefab for tracking and visualizing detected planes.
         /// </summary>
@@ -53,14 +55,18 @@ namespace GoogleARCore.Examples.Common
 
             // Iterate over planes found in this frame and instantiate corresponding GameObjects to visualize them.
             Session.GetTrackables<DetectedPlane>(m_NewPlanes, TrackableQueryFilter.New);
-            for (int i = 0; i < m_NewPlanes.Count; i++)
+            if (!moving)
             {
-                // Instantiate a plane visualization prefab and set it to track the new plane. The transform is set to
-                // the origin with an identity rotation since the mesh for our prefab is updated in Unity World
-                // coordinates.
-                GameObject planeObject = Instantiate(DetectedPlanePrefab, Vector3.zero, Quaternion.identity, transform);
-                planeObject.GetComponent<DetectedPlaneVisualizer>().Initialize(m_NewPlanes[i]);
-                Constants.dataContainer.SetCurrentState(States.PlaneConfirmation);
+                for (int i = 0; i < m_NewPlanes.Count; i++)
+                {
+                    // Instantiate a plane visualization prefab and set it to track the new plane. The transform is set to
+                    // the origin with an identity rotation since the mesh for our prefab is updated in Unity World
+                    // coordinates.
+                    GameObject planeObject = Instantiate(DetectedPlanePrefab, Vector3.zero, Quaternion.identity, transform);
+                    planeObject.GetComponent<DetectedPlaneVisualizer>().Initialize(m_NewPlanes[i]);
+                    Constants.dataContainer.SetCurrentState(States.PlaneConfirmation);
+                    moving = true;
+                }
             }
         }
     }

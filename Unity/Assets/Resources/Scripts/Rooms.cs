@@ -4,6 +4,6 @@ using UnityEngine;
 
 public enum Rooms
 {
-    P_202,
+    P_004,
     F_202
 }

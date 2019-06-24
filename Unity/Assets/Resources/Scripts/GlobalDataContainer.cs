@@ -15,7 +15,7 @@ public class GlobalDataContainer : MonoBehaviour
     private GameObject[] menuPanels;
 
     private States currentState = States.MainMenu;
-    private Rooms currentRoom = Rooms.F_202;
+    private Rooms currentRoom = Rooms.P_004;
 
     private bool isInitialized = false;
     public void SetCurrentState(States newState)
@@ -70,5 +70,10 @@ public class GlobalDataContainer : MonoBehaviour
     public void SetCurrentRoom(Rooms room)
     {
         currentRoom = room;
+    }
+
+    public Rooms GetCurrentRoom( )
+    {
+        return currentRoom;
     }
 }

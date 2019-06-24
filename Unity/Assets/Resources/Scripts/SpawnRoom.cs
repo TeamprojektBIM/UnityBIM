@@ -8,7 +8,8 @@ public class SpawnRoom : MonoBehaviour
     private DetectedPlane detectedPlane;
     private GameObject room;
     private Anchor anchor;
-    public GameObject roomPrefab;
+    [SerializeField]
+    public GameObject[] roomPrefabs;
     private GlobalDataContainer container;
 
     public void Start()
@@ -45,7 +46,7 @@ public class SpawnRoom : MonoBehaviour
         //float distance = Vector3.Distance(roomPrefab.transform.Find("SpawnPoint").position, roomPrefab.transform.Find("FloorForMeasurement").position);
         //Debug.Log(distance);
         //Vector3 newPosition = position-negativeAmount;
-        room = Instantiate(roomPrefab, position, rotation);
+        room = Instantiate(TestRoom(), position, rotation);
 
         room.transform.SetParent(anchor.transform);
 
@@ -61,5 +62,18 @@ public class SpawnRoom : MonoBehaviour
     {
         GameObject containerObject = GameObject.Find(Constants.GlobalDataContainer);
         container = containerObject.GetComponent<GlobalDataContainer>();
+    }
+
+    private GameObject TestRoom()
+    {
+        switch (Constants.dataContainer.GetCurrentRoom())
+        {
+            case Rooms.P_004:
+                return roomPrefabs[0];
+            case Rooms.F_202:
+                return roomPrefabs[1];
+            default:
+                return null;
+        }
     }
 }
