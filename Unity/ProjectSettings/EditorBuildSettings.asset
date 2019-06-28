@@ -14,7 +14,13 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MainScene.unity
     guid: 806cb2d99cbf4564ba8746c3a4263b8f
+  - enabled: 0
+    path: Assets/Scenes/UIScene.unity
+    guid: 2ebf4ee0c33f965419a7c87337d22ef1
+  - enabled: 1
+    path: Assets/Scenes/MasterScene.unity
+    guid: 5ab359e34ecf5ed45a44f459829ef228
   m_configObjects: {}

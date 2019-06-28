@@ -1,117 +1,79 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System;
+using System.Linq;
 using UnityEngine;
 
 using GoogleARCore;
 
 public class GlobalDataContainer : MonoBehaviour
 {
+    public Camera FirstPersonCamera;
+    public GameObject arObject;
 
     [SerializeField]
-    private Camera firstPersonCamera;
+    private GameObject[] menuPanels;
 
-    [SerializeField]
-    private GameObject roomSelectionPanel;
+    private States currentState = States.MainMenu;
+    private Rooms currentRoom = Rooms.P_004;
 
-    public GameObject RoomSelectionPanel
+    private bool isInitialized = false;
+    public void SetCurrentState(States newState)
     {
-        get
+        //Logger.log("cs: " + currentState + ", ns: " + newState);
+        currentState = newState;
+        //Logger.log("Changing current state to: " + currentState.ToString());
+        switch (newState)
         {
-            return roomSelectionPanel;
-        }
-
-        set
-        {
-            roomSelectionPanel = value;
+            case States.MainMenu:
+                disableAllPanelsExcept(menuPanels[0]);
+                break;
+            case States.AboutUs:
+                disableAllPanelsExcept(menuPanels[1]);
+                break;
+            case States.Tutorial:
+                disableAllPanelsExcept(menuPanels[2]);
+                break;
+            case States.RoomSelection:
+                disableAllPanelsExcept(menuPanels[3]);
+                break;
+            case States.PlaneDetection:
+                disableAllPanelsExcept(menuPanels[4]);
+                Instantiate(arObject);
+                break;
+            case States.PlaneConfirmation:
+                disableAllPanelsExcept(menuPanels[5]);
+                break;
+            case States.MarkerPlacement:
+                disableAllPanelsExcept(menuPanels[6]);
+                break;
+            case States.MarkerRotation:
+                disableAllPanelsExcept(menuPanels[7]);
+                break;
+            case States.ModelPlacement:
+                disableAllPanelsExcept(null);
+                break;
         }
     }
 
-
-
-    [SerializeField]
-    private GameObject planeDetectionPanel;
-
-    public GameObject PlaneDetectionPanel
+    private void disableAllPanelsExcept(GameObject panel)
     {
-        get
+        //Logger.log("List: " + panels.Count);
+        foreach (GameObject p in menuPanels)
         {
-            return planeDetectionPanel;
+            p.SetActive(false);
         }
 
-        set
-        {
-            planeDetectionPanel = value;
-        }
+        panel.SetActive(true);
     }
 
-
-    [SerializeField]
-    private GameObject bottomMenuPanel;
-
-    public GameObject BottomMenuPanel
+    public void SetCurrentRoom(Rooms room)
     {
-        get
-        {
-            return bottomMenuPanel;
-        }
-
-        set
-        {
-            bottomMenuPanel = value;
-        }
+        currentRoom = room;
     }
 
-
-    private States currentState;
-    public States CurrentState
+    public Rooms GetCurrentRoom( )
     {
-        get
-        {
-            return currentState;
-        }
-        set
-        {
-            if (currentState == value){
-                return;
-            }
-            currentState = value;
-            switch (value)
-            {
-                case States.RoomSelection:
-                    roomSelectionPanel.SetActive(true);
-                    planeDetectionPanel.SetActive(false);
-                    bottomMenuPanel.SetActive(false);
-                    break;
-
-                case States.PlaneDetection:
-                    roomSelectionPanel.SetActive(false);
-                    planeDetectionPanel.SetActive(true);
-                    bottomMenuPanel.SetActive(false);
-                    break;
-
-                case States.ModelPlacement:
-                    roomSelectionPanel.SetActive(false);
-                    planeDetectionPanel.SetActive(false);
-                    bottomMenuPanel.SetActive(true);
-                    break;
-
-            }
-        }
+        return currentRoom;
     }
-
-
-    public Camera FirstPersonCamera
-    {
-        get
-        {
-            return firstPersonCamera;
-        }
-
-        set
-        {
-            firstPersonCamera = value;
-        }
-    }
-
-
 }
